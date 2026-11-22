@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nama Langit — Ruang Bacaan Diri &amp; Pola Lahir</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            script: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            paper: '#FFFDF9',
+            parchment: '#F8F2E6',
+            ink: '#1E252D',
+            muted: '#5D6773',
+            line: '#E3D4B7',
+            gold: '#B88A3D',
+            sky: '#2F627E',
+            amberTone: '#BA6F2D',
+            moss: '#376E56',
+            plum: '#6D4B7E'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    /* Perpaduan artistik, klasik, modern & luxury dengan palet cerah lembut yang nyaman di mata */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #FCFBF7;
+      background-image:
+        radial-gradient(circle at 10% 8%, rgba(184, 138, 61, 0.11) 0%, transparent 45%),
+        radial-gradient(circle at 90% 12%, rgba(47, 98, 126, 0.08) 0%, transparent 46%),
+        radial-gradient(circle at 80% 90%, rgba(55, 110, 86, 0.08) 0%, transparent 48%),
+        radial-gradient(circle at 16% 88%, rgba(109, 75, 126, 0.07) 0%, transparent 46%);
+      color: #1E252D;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    .editorial-card {
+      position: relative;
+      border-radius: 22px;
+      border-color: rgba(214, 196, 162, 0.72) !important;
+      background-color: rgba(255, 255, 255, 0.96) !important;
+      box-shadow:
+        0 24px 60px -34px rgba(24, 31, 39, 0.14),
+        0 4px 16px -10px rgba(184, 138, 61, 0.12),
+        0 1px 0 rgba(255, 255, 255, 1) inset;
+    }
+
+    .editorial-card::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 1px solid rgba(184, 138, 61, 0.17);
+      border-radius: 15px;
+      pointer-events: none;
+    }
+
+    .luxury-box {
+      border-radius: 14px;
+      border-color: rgba(214, 196, 162, 0.62);
+      transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    }
+
+    .luxury-box:hover {
+      border-color: rgba(184, 138, 61, 0.48);
+      box-shadow: 0 10px 26px -18px rgba(30, 37, 45, 0.16);
+    }
+
+    .luxury-pill {
+      border-radius: 9999px;
+    }
+
+    .field-input {
+      transition: border-color 0.22s ease, background-color 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .field-input:focus {
+      box-shadow: 0 0 0 4px rgba(184, 138, 61, 0.12);
+    }
+
+    /* Warna abu-abu seragam untuk petunjuk di dalam kolom input & select */
+    .field-input::placeholder {
+      color: #9DA6B2;
+      opacity: 1;
+    }
+
+    select.is-placeholder {
+      color: #9DA6B2;
+    }
+
+    select.is-placeholder option {
+      color: #1E252D;
+    }
+
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-rise {
+      animation: riseIn 0.42s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background: #FFFFFF !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-gold/20 selection:text-ink">
+  <!-- Pemilik ruang bacaan -->
+  <script>
+    const SITE_OWNER_NAME = "Muhammad Firman Syah";
+  </script>
+
+  <div class="mx-auto max-w-4xl px-4 py-9 sm:px-7 sm:py-14">
+    <!-- Tajuk Utama & Kredit Pemilik di Bagian Atas -->
+    <header class="editorial-card mb-9 border border-line bg-white/95 p-7 backdrop-blur-sm sm:p-10">
+      <div class="relative z-10 flex flex-wrap items-center justify-between gap-3 border-b border-line/70 pb-5 text-xs font-medium tracking-wide text-muted sm:text-sm">
+        <span class="luxury-pill inline-flex items-center gap-2 border border-gold/30 bg-parchment/80 px-4 py-1.5 text-gold">
+          <svg class="h-3.5 w-3.5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l1.9 5.8L20 10.7l-5.1 3.7L16.8 20 12 16.5 7.2 20l1.9-5.6L4 10.7l6.1-1.9L12 3z" />
+          </svg>
+          <span class="font-serif text-xs font-semibold uppercase tracking-[0.2em]">Potret Sisi Diri</span>
+        </span>
+        <span class="text-right text-muted">
+          Dirancang &amp; Dikembangkan oleh <strong class="font-semibold text-ink" id="headerOwnerName">Muhammad Firman Syah</strong>
+        </span>
+      </div>
+
+      <div class="relative z-10 mt-7">
+        <div class="flex flex-wrap items-baseline gap-3.5">
+          <h1 class="font-display text-4xl font-semibold italic tracking-tight text-ink sm:text-6xl">
+            Nama Langit
+          </h1>
+          <span class="font-serif text-lg italic text-gold sm:text-xl">merangkai sisi-sisi diri jadi satu keutuhan</span>
+        </div>
+        <p class="mt-3.5 max-w-2xl font-serif text-xl leading-relaxed text-muted sm:text-2xl">
+          Kenapa bagian dirimu yang ingin melesat sering tarik-menarik sama sisi yang minta jeda—atau yang kelihatan tenang di luar justru nyimpen rasa yang paling dalam? Yuk, intip paradoks-paradoks kecil di dalam dirimu dan rangkai semuanya jadi satu kesatuan yang makin nyambung.
+        </p>
+      </div>
+    </header>
+
+    <!-- Formulir Input Kosong Siap Isi -->
+    <section aria-label="Formulir Data Diri" class="editorial-card no-print border border-line bg-white/95 p-7 backdrop-blur-sm sm:p-9">
+      <div class="relative z-10 mb-7 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h2 class="font-serif text-3xl font-semibold text-ink sm:text-4xl">Ceritain Dulu Data Lahirmu</h2>
+          <p class="mt-1.5 text-sm leading-relaxed text-muted">
+            Nggak wajib diisi semua kok—isi aja bagian yang kamu mau, nanti obrolan bacaannya nyambung ke situ.
+          </p>
+        </div>
+        <button
+          type="button"
+          id="resetFormBtn"
+          class="luxury-pill mt-3 inline-flex w-fit items-center justify-center border border-line bg-parchment/80 px-4 py-2 text-xs font-semibold tracking-wide text-muted transition hover:border-gold/60 hover:bg-parchment hover:text-ink sm:mt-0"
+        >
+          Bersihin Kolom
+        </button>
+      </div>
+
+      <form id="profileForm" class="relative z-10 space-y-5" novalidate>
+        <!-- Baris 1: Nama Lengkap & Nama Panggilan -->
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div>
+            <label for="fullName" class="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted">
+              Nama Lengkapmu
+            </label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              autocomplete="name"
+              placeholder="Nama lengkapmu di keseharian"
+              class="field-input luxury-box w-full border border-line bg-paper px-4 py-3 text-sm text-ink outline-none transition focus:border-gold focus:bg-white sm:text-base"
+            />
+          </div>
+
+          <div>
+            <label for="callName" class="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted">
+              Nama Panggilan
+            </label>
+            <input
+              type="text"
+              id="callName"
+              name="callName"
+              autocomplete="nickname"
+              placeholder="Panggilan akrab yang sering dipakai"
+              class="field-input luxury-box w-full border border-line bg-paper px-4 py-3 text-sm text-ink outline-none transition focus:border-gold focus:bg-white sm:text-base"
+            />
+          </div>
+        </div>
+
+        <!-- Baris 2: Tanggal, Bulan, Tahun & Waktu 24 Jam (Satu Kolom) -->
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <div>
+            <label for="birthDay" class="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted">
+              Tanggal Lahir
+            </label>
+            <select
+              id="birthDay"
+              name="birthDay"
+              class="field-input is-placeholder luxury-box w-full border border-line bg-paper px-3.5 py-3 text-sm outline-none transition focus:border-gold focus:bg-white sm:text-base"
+            >
+              <option value="" selected>Pilih tanggal (1–31)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="birthMonth" class="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted">
+              Bulan Lahir
+            </label>
+            <select
+              id="birthMonth"
+              name="birthMonth"
+              class="field-input is-placeholder luxury-box w-full border border-line bg-paper px-3.5 py-3 text-sm outline-none transition focus:border-gold focus:bg-white sm:text-base"
+            >
+              <option value="" selected>Pilih bulan lahir</option>
+              <option value="1">Januari</option>
+              <option value="2">Februari</option>
+              <option value="3">Maret</option>
+              <option value="4">April</option>
+              <option value="5">Mei</option>
+              <option value="6">Juni</option>
+              <option value="7">Juli</option>
+              <option value="8">Agustus</option>
+              <option value="9">September</option>
+              <option value="10">Oktober</option>
+              <option value="11">November</option>
+              <option value="12">Desember</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="birthYear" class="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted">
+              Tahun Lahir
+            </label>
+            <input
+              type="number"
+              id="birthYear"
+              name="birthYear"
+              min="1900"
+              max="2100"
+              inputmode="numeric"
+              placeholder="Tahun lahir (mis. 1998)"
+              class="field-input luxury-box w-full border border-line bg-paper px-4 py-3 text-sm text-ink outline-none transition focus:border-gold focus:bg-white sm:text-base"
+            />
+          </div>
+
+          <div>
+            <label for="birthTime" class="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted">
+              Jam Lahir
+            </label>
+            <input
+              type="text"
+              id="birthTime"
+              name="birthTime"
+              inputmode="numeric"
+              maxlength="5"
+              placeholder="Jam lahir (mis. 06.30)"
+              class="field-input luxury-box w-full border border-line bg-paper px-4 py-3 text-sm text-ink outline-none transition focus:border-gold focus:bg-white sm:text-base"
+            />
+          </div>
+        </div>
+
+        <!-- Baris 3: Kabupaten / Kota Kelahiran & Irama Tenaga -->
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div>
+            <label for="birthPlace" class="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted">
+              Kabupaten / Kota Kelahiran
+            </label>
+            <input
+              type="text"
+              id="birthPlace"
+              name="birthPlace"
+              list="birthPlaceSuggestions"
+              autocomplete="off"
+              placeholder="Kabupaten atau kota lahirmu (mis. Kota Bandung)"
+              class="field-input luxury-box w-full border border-line bg-paper px-4 py-3 text-sm text-ink outline-none transition focus:border-gold focus:bg-white sm:text-base"
+            />
+            <datalist id="birthPlaceSuggestions"></datalist>
+            <div id="livePlaceCoord" class="luxury-box mt-2 hidden flex-wrap items-center justify-between gap-2 border border-line/80 bg-parchment/80 px-3.5 py-2 text-xs text-muted">
+              <span>Titik koordinat: <strong id="livePlaceCoordText" class="font-semibold text-ink"></strong></span>
+              <span id="livePlaceName" class="text-[11px] font-medium text-sky"></span>
+            </div>
+          </div>
+
+          <div>
+            <label for="capacity" class="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted">
+              Irama Tenaga Sehari-Hari
+            </label>
+            <select
+              id="capacity"
+              name="capacity"
+              class="field-input is-placeholder luxury-box w-full border border-line bg-paper px-4 py-3 text-sm outline-none transition focus:border-gold focus:bg-white sm:text-base"
+            >
+              <option value="" selected>Gimana ritme tenagamu biasanya?</option>
+              <option value="hemat">Hemat &amp; Terjaga (tenaga dijaga agar tidak cepat habis)</option>
+              <option value="terukur">Terukur &amp; Stabil (melangkah ritmis dan bertahap)</option>
+              <option value="berlimpah">Penuh &amp; Mengalir (mudah memberi tenaga saat antusias)</option>
+              <option value="gelombang">Bergelombang (kadang memuncak, lalu butuh jeda pulih)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Pesan status / validasi halus tanpa alert() -->
+        <div id="formNotice" class="luxury-box hidden border px-4 py-3 text-sm" role="status" aria-live="polite"></div>
+
+        <!-- Tombol Aksi Utama -->
+        <div class="flex justify-end pt-3">
+          <button
+            type="submit"
+            class="luxury-pill inline-flex w-full items-center justify-center gap-2 border border-gold/45 bg-gradient-to-r from-[#1D252E] via-[#273442] to-sky px-8 py-3.5 text-sm font-semibold tracking-wider text-white shadow-lg shadow-ink/15 transition duration-200 hover:brightness-105 active:scale-[0.99] sm:w-auto"
+          >
+            <span>Yuk, Baca Gambaran Diriku</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Wadah Hasil Bacaan -->
+    <main id="resultContainer" class="mt-9 hidden space-y-6" aria-live="polite"></main>
+
+    <!-- Kredit Pemilik di Bagian Bawah -->
+    <footer class="luxury-box mt-14 border border-line bg-parchment/70 px-6 py-6 text-center text-sm leading-relaxed text-muted sm:px-8">
+      <p>
+        <strong class="font-display text-base font-semibold tracking-wider text-ink">Nama Langit</strong> —
+        Dirancang &amp; Dikembangkan oleh <span class="font-semibold text-ink" id="footerOwnerName">Muhammad Firman Syah</span>.
+      </p>
+      <p class="mt-1 text-xs text-muted/90">
+        Dibuat buat teman ngobrol &amp; merenung pelan-pelan—bukan vonis pasti soal nasibmu ya.
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      // Sinkronisasi nama pemilik di bagian atas dan bawah halaman
+      const ownerDisplay = (typeof SITE_OWNER_NAME === "string" && SITE_OWNER_NAME.trim())
+        ? SITE_OWNER_NAME.trim()
+        : "Muhammad Firman Syah";
+      const headerOwnerEl = document.getElementById("headerOwnerName");
+      const footerOwnerEl = document.getElementById("footerOwnerName");
+      if (headerOwnerEl) headerOwnerEl.textContent = ownerDisplay;
+      if (footerOwnerEl) footerOwnerEl.textContent = ownerDisplay;
+
+      // Isi pilihan tanggal 1–31
+      const daySelect = document.getElementById("birthDay");
+      for (let d = 1; d <= 31; d++) {
+        const opt = document.createElement("option");
+        opt.value = String(d);
+        opt.textContent = `Tanggal ${d}`;
+        daySelect.appendChild(opt);
+      }
+
+      // Perbarui warna placeholder pada elemen <select>
+      function syncSelectPlaceholder(selectEl) {
+        if (!selectEl) return;
+        if (!selectEl.value) {
+          selectEl.classList.add("is-placeholder");
+        } else {
+          selectEl.classList.remove("is-placeholder");
+        }
+      }
+
+      const selectEls = Array.from(document.querySelectorAll("select.field-input"));
+      selectEls.forEach((sel) => {
+        syncSelectPlaceholder(sel);
+        sel.addEventListener("change", () => syncSelectPlaceholder(sel));
+      });
+
+      const form = document.getElementById("profileForm");
+      const resetBtn = document.getElementById("resetFormBtn");
+      const noticeEl = document.getElementById("formNotice");
+      const resultEl = document.getElementById("resultContainer");
+      const birthPlaceInput = document.getElementById("birthPlace");
+      const birthPlaceDatalist = document.getElementById("birthPlaceSuggestions");
+      const livePlaceCoordEl = document.getElementById("livePlaceCoord");
+      const livePlaceCoordTextEl = document.getElementById("livePlaceCoordText");
+      const livePlaceNameEl = document.getElementById("livePlaceName");
+
+      function showNotice(message, type) {
+        if (!message) {
+          noticeEl.className = "luxury-box hidden border px-4 py-3 text-sm";
+          noticeEl.textContent = "";
+          return;
+        }
+        const toneClass = type === "error"
+          ? "border-amberTone/35 bg-amberTone/10 text-amberTone"
+          : "border-moss/35 bg-moss/10 text-moss";
+        noticeEl.className = `luxury-box border px-4 py-3 text-sm ${toneClass}`;
+        noticeEl.textContent = message;
+      }
+
+      // Escape HTML agar aman dirender ke DOM
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      // Penjumlahan digit berulang hingga 1 digit (1–9), kecuali angka master 11, 22, 33 bila diperlukan
+      function reduceRoot(num, keepMaster) {
+        let current = Math.abs(Math.round(Number(num) || 0));
+        if (current === 0) return 0;
+        while (current > 9) {
+          if (keepMaster && (current === 11 || current === 22 || current === 33)) {
+            return current;
+          }
+          current = String(current)
+            .split("")
+            .reduce((acc, ch) => acc + Number(ch), 0);
+        }
+        return current;
+      }
+
+      // Tabel nilai numerologi huruf A–Z (sistem Pythagorean 1–9)
+      const LETTER_VALUES = {
+        a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, h: 8, i: 9,
+        j: 1, k: 2, l: 3, m: 4, n: 5, o: 6, p: 7, q: 8, r: 9,
+        s: 1, t: 2, u: 3, v: 4, w: 5, x: 6, y: 7, z: 8
+      };
+
+      const BASE_VOWELS = new Set(["a", "i", "u", "e", "o"]);
+
+      // Menentukan apakah huruf 'y' pada posisi tertentu berfungsi sebagai vokal
+      function isYVowelAt(letters, idx) {
+        const prev = idx > 0 ? letters[idx - 1] : "";
+        const next = idx < letters.length - 1 ? letters[idx + 1] : "";
+        const prevIsBaseVowel = BASE_VOWELS.has(prev);
+        const nextIsBaseVowel = BASE_VOWELS.has(next);
+
+        // Jika diapit vokal dasar (seperti 'aya'), 'y' cenderung menjadi konsonan luncur
+        if (prevIsBaseVowel && nextIsBaseVowel) return false;
+        // Jika berada di akhir kata/suku kata tanpa vokal setelahnya (seperti 'syah', 'ry', 'dy'), 'y' vokal
+        if (!nextIsBaseVowel) return true;
+        // Jika di awal kata diikuti konsonan (seperti 'ynt'), vokal; jika diikuti vokal ('yusuf'), konsonan
+        return !prev && !nextIsBaseVowel;
+      }
+
+      // Profil makna numerologi inti (1–9 serta master 11, 22, 33)
+      const NUMEROLOGY_MEANINGS = {
+        1: {
+          archetype: "Perintis Mandiri",
+          coreTrait: "punya dorongan kuat untuk memulai, mengambil inisiatif, dan berdiri di atas kaki sendiri",
+          innerDrive: "kebutuhan untuk merasa berdaya, punya arah sendiri, dan tidak sekadar mengekori langkah orang lain",
+          outerImpression: "tegas, mandiri, dan langsung pada pokok persoalan",
+          paradox: "ingin memimpin dan bebas menentukan arah, namun kadang merasa harus memikul semuanya sendirian",
+          balance: "memberi ruang untuk percaya pada kerja sama dan menerima bantuan tanpa merasa kalah"
+        },
+        2: {
+          archetype: "Penjaga Harmoni & Kepekaan",
+          coreTrait: "sangat peka pada nuansa perasaan, relasi, dan keselarasan suasana di sekitar",
+          innerDrive: "kerinduan akan kedekatan yang tulus, ketenangan batin, dan saling mengerti",
+          outerImpression: "lembut, menyimak dengan saksama, dan menenangkan",
+          paradox: "mudah menangkap rasa orang lain, tetapi sering menunda menyampaikan kebutuhan sendiri",
+          balance: "menjaga kehangatan hubungan sekaligus menetapkan batas yang sehat bagi diri sendiri"
+        },
+        3: {
+          archetype: "Penutur & Penggagas Ekspresif",
+          coreTrait: "hidup lewat gagasan, cerita, kreativitas, dan cara menyampaikan makna dengan warna",
+          innerDrive: "dorongan untuk berekspresi jujur, mencipta, dan menghidupkan suasana",
+          outerImpression: "terbuka, hidup, dan mudah menyalakan percakapan",
+          paradox: "banyak ide dan semangat baru, namun kadang tersebar energinya bila terlalu banyak hal dikejar serentak",
+          balance: "memilih satu-dua gagasan utama untuk diselesaikan sampai tuntas dengan tenang"
+        },
+        4: {
+          archetype: "Pembangun Struktur & Keteguhan",
+          coreTrait: "mengutamakan keteraturan, keandalan, proses bertahap, dan pijakan yang nyata",
+          innerDrive: "kebutuhan akan rasa aman yang terbangun lewat konsistensi dan kerja nyata",
+          outerImpression: "rapi, dapat diandalkan, dan membumi",
+          paradox: "sangat kuat menjaga sistem dan tanggung jawab, namun bisa terlalu kaku saat keadaan berubah mendadak",
+          balance: "mempertahankan fondasi yang kuat sambil tetap lentur menghadapi kejutan hidup"
+        },
+        5: {
+          archetype: "Penjelajah Dinamis",
+          coreTrait: "cepat beradaptasi, haus pengalaman baru, dan mudah bosan pada pola yang terlalu sempit",
+          innerDrive: "kebutuhan akan kebebasan bergerak, variasi pengalaman, dan ruang bernapas",
+          outerImpression: "lincah, cepat tanggap, dan penuh rasa ingin tahu",
+          paradox: "mudah memulai banyak hal menarik, tetapi rentan gelisah ketika harus bertahan pada satu rutinitas panjang",
+          balance: "menemukan kebebasan batin bahkan di dalam komitmen yang dipilih dengan sadar"
+        },
+        6: {
+          archetype: "Pengayom & Penata Ruang",
+          coreTrait: "terpanggil merawat, melindungi, dan menata keseimbangan tanggung jawab bagi orang terdekat",
+          innerDrive: "keinginan menghadirkan rasa nyaman, keadilan, dan kehangatan rumah/lingkungan",
+          outerImpression: "penuh perhatian, mengayomi, dan bertanggung jawab",
+          paradox: "sangat sigap mengurus kebutuhan orang lain, namun sering lupa menakar kapasitas diri sendiri",
+          balance: "merawat sesama tanpa mengorbankan kesehatan dan ketenangan batin sendiri"
+        },
+        7: {
+          archetype: "Penelaah & Pencari Makna",
+          coreTrait: "cenderung mengamati secara mendalam, menyaring informasi, dan mencari makna di balik peristiwa",
+          innerDrive: "kebutuhan akan keheningan, kejujuran batin, dan pemahaman yang utuh sebelum percaya",
+          outerImpression: "tenang, observatif, dan penuh pertimbangan",
+          paradox: "tajam membaca pola dan makna, namun kadang terlalu lama menarik diri ke dalam pikiran sendiri",
+          balance: "menyeimbangkan waktu menyendiri untuk merenung dengan keterbukaan berbagi cerita"
+        },
+        8: {
+          archetype: "Pengelola Daya & Realisasi",
+          coreTrait: "memiliki fokus kuat pada hasil nyata, pengelolaan sumber daya, dan pengaruh yang terukur",
+          innerDrive: "dorongan untuk membangun karya berdampak, berdaulat, dan dihargai atas ketangguhan",
+          outerImpression: "berwibawa, terarah, dan tegas mengeksekusi",
+          paradox: "mampu menggerakkan hal besar, namun bisa mudah tegang saat merasa kendali lepas dari tangan",
+          balance: "memadukan ketegasan hasil dengan kelapangan hati menerima proses yang bertumbuh"
+        },
+        9: {
+          archetype: "Penyambung Rasa & Gambaran Luas",
+          coreTrait: "melihat gambaran besar kemanusiaan, mudah berempati luas, dan peka pada nilai yang melampaui diri",
+          innerDrive: "kebutuhan untuk memberi arti yang lebih luas, melepaskan yang sudah selesai, dan merangkul banyak sudut",
+          outerImpression: "matang, empatik, dan berwawasan luas",
+          paradox: "mudah memahami banyak sisi, tetapi kadang kelelahan karena ikut merasakan beban banyak orang",
+          balance: "tahu kapan harus merangkul dan kapan perlu melepaskan hal yang bukan tanggung jawabnya"
+        },
+        11: {
+          archetype: "Penangkap Intuisi & Pencerah",
+          coreTrait: "memiliki kepekaan batin yang tajam, tangkapan gagasan yang cepat, dan daya inspirasi alami",
+          innerDrive: "dorongan untuk menyalurkan kepekaan dan visi batin menjadi sesuatu yang jernih dan menenangkan",
+          outerImpression: "peka, inspiratif, dan memiliki kedalaman rasa yang khas",
+          paradox: "kepekaan tinggi membuat ide dan suasana mudah terserap, sehingga gampang overstimulasi",
+          balance: "menjadikan kepekaan sebagai kompas batin yang jernih dengan pijakan rutinitas sederhana"
+        },
+        22: {
+          archetype: "Perancang Visi Nyata",
+          coreTrait: "memadukan imajinasi berskala luas dengan kemampuan menurunkannya menjadi langkah sistematis",
+          innerDrive: "keinginan membangun sesuatu yang kokoh dan bertahan lama bagi banyak orang",
+          outerImpression: "visioner, tenang, dan berkapasitas besar",
+          paradox: "standar dan visi yang tinggi bisa membuat diri sendiri tertekan bila prosesnya terasa lambat",
+          balance: "menghargai kemajuan kecil hari ini sebagai batu pijakan menuju rencana besar"
+        },
+        33: {
+          archetype: "Penuntun Kasih & Pelayanan",
+          coreTrait: "menghadirkan kehangatan, ketulusan memberi, dan kemampuan menyembuhkan suasana lewat kehadiran",
+          innerDrive: "dorongan tulus untuk menguatkan sesama dan menjaga kemanusiaan dalam tindakan sehari-hari",
+          outerImpression: "hangat, tulus, dan meneduhkan",
+          paradox: "keinginan memberi yang besar sering membuat batas lelah tidak disadari hingga titik akhir",
+          balance: "mengisi kembali sumur diri sendiri agar kasih dan perhatian tetap mengalir alami"
+        }
+      };
+
+      // Analisis numerologi lengkap untuk sebuah nama
+      function analyzeNameNumerology(rawName) {
+        const trimmed = String(rawName || "").trim();
+        if (!trimmed) return null;
+
+        const words = trimmed.split(/\s+/).filter(Boolean);
+        const letters = [];
+
+        words.forEach((word) => {
+          const cleanWord = word.replace(/[^a-zA-Z]/g, "").toLowerCase();
+          for (let i = 0; i < cleanWord.length; i++) {
+            const ch = cleanWord[i];
+            if (LETTER_VALUES[ch]) {
+              letters.push({ char: ch, val: LETTER_VALUES[ch] });
+            }
+          }
+        });
+
+        if (letters.length === 0) return null;
+
+        let totalSum = 0;
+        let vowelSum = 0;
+        let consonantSum = 0;
+        let vowelCount = 0;
+        let consonantCount = 0;
+
+        letters.forEach((item, idx) => {
+          totalSum += item.val;
+          const isVowel = BASE_VOWELS.has(item.char) ||
+            (item.char === "y" && isYVowelAt(letters.map((l) => l.char), idx));
+
+          if (isVowel) {
+            vowelSum += item.val;
+            vowelCount += 1;
+          } else {
+            consonantSum += item.val;
+            consonantCount += 1;
+          }
+        });
+
+        const coreNum = reduceRoot(totalSum, true);
+        const soulNum = vowelSum > 0 ? reduceRoot(vowelSum, true) : reduceRoot(totalSum, false);
+        const outerNum = consonantSum > 0 ? reduceRoot(consonantSum, true) : reduceRoot(totalSum, false);
+
+        const getMeaning = (n) => NUMEROLOGY_MEANINGS[n] || NUMEROLOGY_MEANINGS[reduceRoot(n, false) || 1];
+
+        // Menjaga penulisan nama sesuai huruf yang diketik pengguna
+        const displayName = words
+          .map((w) => w.replace(/[^a-zA-Z'-]/g, ""))
+          .filter(Boolean)
+          .join(" ") || trimmed;
+
+        return {
+          cleaned: displayName,
+          rawInput: trimmed,
+          letterCount: letters.length,
+          vowelCount,
+          consonantCount,
+          totalSum,
+          vowelSum,
+          consonantSum,
+          coreNum,
+          soulNum,
+          outerNum,
+          coreProfile: getMeaning(coreNum),
+          soulProfile: getMeaning(soulNum),
+          outerProfile: getMeaning(outerNum)
+        };
+      }
+
+      // Jumlah hari pada bulan tertentu (memperhitungkan tahun kabisat)
+      function daysInMonth(month, year) {
+        const m = Number(month);
+        if (!m || m < 1 || m > 12) return 31;
+        if (m === 2) {
+          if (year && Number.isInteger(Number(year))) {
+            const y = Number(year);
+            const isLeap = (y % 4 === 0 && y % 100 !== 0) || (y % 400 === 0);
+            return isLeap ? 29 : 28;
+          }
+          return 29;
+        }
+        if ([4, 6, 9, 11].includes(m)) return 30;
+        return 31;
+      }
+
+      // Validasi dan uraikan waktu format 24 jam (HH:MM atau HH.MM)
+      function parseBirthTime24(rawTime) {
+        const cleaned = String(rawTime || "").trim();
+        if (!cleaned) return { provided: false, valid: true };
+
+        const match = cleaned.match(/^([01]?\d|2[0-3])[:.]([0-5]\d)$/);
+        if (!match) {
+          return {
+            provided: true,
+            valid: false,
+            error: "Format waktu 24 jam harus antara 00.00 hingga 23.59 (contoh: 06.30 atau 19.45)."
+          };
+        }
+
+        const hour = Number(match[1]);
+        const minute = Number(match[2]);
+        const formatted = `${String(hour).padStart(2, "0")}.${String(minute).padStart(2, "0")}`;
+
+        let phase = "";
+        let element = "Pikiran";
+        let note = "";
+
+        if (hour >= 0 && hour < 4) {
+          phase = "Jeda Sunyi Tengah Malam";
+          element = "Rasa";
+          note = "suasana hening saat dunia melambat dan lapisan batin terasa paling jujur";
+        } else if (hour >= 4 && hour < 7) {
+          phase = "Fajar & Embun Pagi";
+          element = "Gerak";
+          note = "transisi dari tidur menuju kesadaran baru yang segar dan bening";
+        } else if (hour >= 7 && hour < 12) {
+          phase = "Terang Pagi Menanjak";
+          element = "Gerak";
+          note = "waktu ketika energi gerak, rencana, dan fokus mulai menaik";
+        } else if (hour >= 12 && hour < 15) {
+          phase = "Puncak Terik Siang";
+          element = "Gerak";
+          note = "saat cahaya berada di titik tinggi dan aktivitas berada pada ritme paling terang";
+        } else if (hour >= 15 && hour < 18) {
+          phase = "Sore Teduh & Mengalir";
+          element = "Pikiran";
+          note = "waktu menyaring hasil hari dan menata ulang alur kerja sebelum senja";
+        } else if (hour >= 18 && hour < 21) {
+          phase = "Senja & Pulang ke Rumah";
+          element = "Rasa";
+          note = "saat cahaya meredup dan perhatian beralih ke kehangatan serta pemulihan";
+        } else {
+          phase = "Malam Tenang & Menyelam";
+          element = "Pijakan";
+          note = "fase meredakan hiruk-pikuk dan mengembalikan pusat diri ke titik tenang";
+        }
+
+        return {
+          provided: true,
+          valid: true,
+          hour,
+          minute,
+          formatted,
+          phase,
+          element,
+          note
+        };
+      }
+
+      // Kamus koordinat kabupaten/kota di Indonesia & wilayah utama
+      const PLACE_COORDS = [
+        { keys: ["banda aceh"], city: "Kota Banda Aceh", lat: 5.5483, lon: 95.3238 },
+        { keys: ["aceh besar", "jantho"], city: "Kab. Aceh Besar", lat: 5.3886, lon: 95.5245 },
+        { keys: ["aceh barat", "meulaboh"], city: "Kab. Aceh Barat", lat: 4.1422, lon: 96.1277 },
+        { keys: ["aceh selatan", "tapaktuan"], city: "Kab. Aceh Selatan", lat: 3.2557, lon: 97.1774 },
+        { keys: ["aceh tengah", "takengon"], city: "Kab. Aceh Tengah", lat: 4.6295, lon: 96.8356 },
+        { keys: ["aceh timur", "idi rayeuk"], city: "Kab. Aceh Timur", lat: 4.9333, lon: 97.7667 },
+        { keys: ["aceh utara", "lhoksukon"], city: "Kab. Aceh Utara", lat: 5.0518, lon: 97.3264 },
+        { keys: ["bireuen"], city: "Kab. Bireuen", lat: 5.2036, lon: 96.7009 },
+        { keys: ["pidie", "sigli"], city: "Kab. Pidie", lat: 5.3849, lon: 95.9609 },
+        { keys: ["lhokseumawe"], city: "Kota Lhokseumawe", lat: 5.1801, lon: 97.1507 },
+        { keys: ["langsa"], city: "Kota Langsa", lat: 4.4683, lon: 97.9683 },
+        { keys: ["sabang"], city: "Kota Sabang", lat: 5.8942, lon: 95.3222 },
+        { keys: ["medan"], city: "Kota Medan", lat: 3.5952, lon: 98.6722 },
+        { keys: ["deli serdang", "lubuk pakam"], city: "Kab. Deli Serdang", lat: 3.4383, lon: 98.7176 },
+        { keys: ["serdang bedagai", "sei rampah"], city: "Kab. Serdang Bedagai", lat: 3.5889, lon: 99.1389 },
+        { keys: ["langkat", "stabat"], city: "Kab. Langkat", lat: 3.7604, lon: 98.4525 },
+        { keys: ["karo", "kabanjahe", "berastagi"], city: "Kab. Karo", lat: 3.1031, lon: 98.4906 },
+        { keys: ["asahan", "kisaran"], city: "Kab. Asahan", lat: 2.9814, lon: 99.6156 },
+        { keys: ["labuhanbatu", "rantauprapat", "rantau prapat"], city: "Kab. Labuhanbatu", lat: 2.0942, lon: 99.8272 },
+        { keys: ["tapanuli utara", "tarutung"], city: "Kab. Tapanuli Utara", lat: 2.0217, lon: 98.9675 },
+        { keys: ["tapanuli tengah", "pandan"], city: "Kab. Tapanuli Tengah", lat: 1.6947, lon: 98.8267 },
+        { keys: ["tapanuli selatan", "sipirok"], city: "Kab. Tapanuli Selatan", lat: 1.6022, lon: 99.2683 },
+        { keys: ["nias", "gunungsitoli", "gunung sitoli"], city: "Kota Gunungsitoli / Nias", lat: 1.2819, lon: 97.6194 },
+        { keys: ["binjai"], city: "Kota Binjai", lat: 3.6001, lon: 98.4854 },
+        { keys: ["pematangsiantar", "siantar"], city: "Kota Pematangsiantar", lat: 2.9595, lon: 99.0687 },
+        { keys: ["tebing tinggi"], city: "Kota Tebing Tinggi", lat: 3.3285, lon: 99.1625 },
+        { keys: ["padangsidimpuan", "padang sidimpuan"], city: "Kota Padangsidimpuan", lat: 1.3784, lon: 99.2729 },
+        { keys: ["padang"], city: "Kota Padang", lat: -0.9471, lon: 100.4172 },
+        { keys: ["padang pariaman", "parit malintang"], city: "Kab. Padang Pariaman", lat: -0.6186, lon: 100.2814 },
+        { keys: ["agam", "lubuk basung"], city: "Kab. Agam", lat: -0.2147, lon: 100.1233 },
+        { keys: ["tanah datar", "batusangkar"], city: "Kab. Tanah Datar", lat: -0.4556, lon: 100.5944 },
+        { keys: ["pesisir selatan", "painan"], city: "Kab. Pesisir Selatan", lat: -1.3458, lon: 100.5764 },
+        { keys: ["solok"], city: "Kota Solok", lat: -0.8247, lon: 100.6561 },
+        { keys: ["bukittinggi"], city: "Kota Bukittinggi", lat: -0.3056, lon: 100.3692 },
+        { keys: ["payakumbuh"], city: "Kota Payakumbuh", lat: -0.2203, lon: 100.6308 },
+        { keys: ["pariaman"], city: "Kota Pariaman", lat: -0.6269, lon: 100.1194 },
+        { keys: ["pekanbaru"], city: "Kota Pekanbaru", lat: 0.5071, lon: 101.4478 },
+        { keys: ["kampar", "bangkinang"], city: "Kab. Kampar", lat: 0.3358, lon: 101.0258 },
+        { keys: ["bengkalis"], city: "Kab. Bengkalis", lat: 1.4744, lon: 102.1086 },
+        { keys: ["indragiri hulu", "rengat"], city: "Kab. Indragiri Hulu", lat: -0.3775, lon: 102.5453 },
+        { keys: ["indragiri hilir", "tembilahan"], city: "Kab. Indragiri Hilir", lat: -0.3208, lon: 103.1539 },
+        { keys: ["pelalawan", "pangkalan kerinci"], city: "Kab. Pelalawan", lat: 0.3914, lon: 101.8553 },
+        { keys: ["siak"], city: "Kab. Siak", lat: 0.7931, lon: 102.0508 },
+        { keys: ["dumai"], city: "Kota Dumai", lat: 1.6667, lon: 101.45 },
+        { keys: ["batam"], city: "Kota Batam", lat: 1.0456, lon: 104.0305 },
+        { keys: ["tanjungpinang", "tanjung pinang"], city: "Kota Tanjungpinang", lat: 0.9168, lon: 104.4433 },
+        { keys: ["bintan"], city: "Kab. Bintan", lat: 1.0667, lon: 104.5833 },
+        { keys: ["karimun", "tanjung balai karimun"], city: "Kab. Karimun", lat: 0.9906, lon: 103.4331 },
+        { keys: ["jambi"], city: "Kota Jambi", lat: -1.6101, lon: 103.6131 },
+        { keys: ["muaro jambi", "sengeti"], city: "Kab. Muaro Jambi", lat: -1.5647, lon: 103.8544 },
+        { keys: ["bungo", "muara bungo"], city: "Kab. Bungo", lat: -1.4944, lon: 102.1189 },
+        { keys: ["merangin", "bangko"], city: "Kab. Merangin", lat: -2.0667, lon: 102.2667 },
+        { keys: ["palembang"], city: "Kota Palembang", lat: -2.9761, lon: 104.7754 },
+        { keys: ["banyuasin", "pangkalan balai"], city: "Kab. Banyuasin", lat: -2.8819, lon: 104.3806 },
+        { keys: ["muara enim"], city: "Kab. Muara Enim", lat: -3.65, lon: 103.7667 },
+        { keys: ["musi banyuasin", "sekayu"], city: "Kab. Musi Banyuasin", lat: -2.8833, lon: 103.8333 },
+        { keys: ["ogan komering ilir", "oki", "kayugagung", "kayu agung"], city: "Kab. Ogan Komering Ilir", lat: -3.3944, lon: 104.8356 },
+        { keys: ["lubuklinggau", "lubuk linggau"], city: "Kota Lubuklinggau", lat: -3.2953, lon: 102.8614 },
+        { keys: ["prabumulih"], city: "Kota Prabumulih", lat: -3.4328, lon: 104.2356 },
+        { keys: ["bengkulu"], city: "Kota Bengkulu", lat: -3.7928, lon: 102.2608 },
+        { keys: ["rejang lebong", "curup"], city: "Kab. Rejang Lebong", lat: -3.4719, lon: 102.5197 },
+        { keys: ["bandar lampung", "tanjung karang"], city: "Kota Bandar Lampung", lat: -5.3971, lon: 105.2668 },
+        { keys: ["metro"], city: "Kota Metro", lat: -5.1131, lon: 105.3067 },
+        { keys: ["lampung selatan", "kalianda"], city: "Kab. Lampung Selatan", lat: -5.7367, lon: 105.595 },
+        { keys: ["lampung tengah", "gunung sugih"], city: "Kab. Lampung Tengah", lat: -4.8667, lon: 105.2667 },
+        { keys: ["lampung utara", "kotabumi"], city: "Kab. Lampung Utara", lat: -4.8286, lon: 104.8944 },
+        { keys: ["tanggamus", "kota agung"], city: "Kab. Tanggamus", lat: -5.4958, lon: 104.6308 },
+        { keys: ["pangkalpinang", "pangkal pinang"], city: "Kota Pangkalpinang", lat: -2.1316, lon: 106.1069 },
+        { keys: ["belitung", "tanjung pandan"], city: "Kab. Belitung", lat: -2.7406, lon: 107.6386 },
+        { keys: ["bangka", "sungailiat"], city: "Kab. Bangka", lat: -1.8608, lon: 106.1097 },
+        { keys: ["jakarta pusat", "menteng", "gambir"], city: "Jakarta Pusat", lat: -6.1862, lon: 106.8341 },
+        { keys: ["jakarta selatan", "kebayoran"], city: "Jakarta Selatan", lat: -6.2615, lon: 106.8106 },
+        { keys: ["jakarta barat", "grogol"], city: "Jakarta Barat", lat: -6.1683, lon: 106.7588 },
+        { keys: ["jakarta timur", "cakung"], city: "Jakarta Timur", lat: -6.225, lon: 106.9004 },
+        { keys: ["jakarta utara", "tanjung priok"], city: "Jakarta Utara", lat: -6.1214, lon: 106.8825 },
+        { keys: ["jakarta", "dki jakarta"], city: "DKI Jakarta", lat: -6.2088, lon: 106.8456 },
+        { keys: ["kota bandung", "bandung"], city: "Kota Bandung", lat: -6.9175, lon: 107.6191 },
+        { keys: ["kabupaten bandung", "kab. bandung", "soreang"], city: "Kab. Bandung", lat: -7.0253, lon: 107.5197 },
+        { keys: ["bandung barat", "ngamprah"], city: "Kab. Bandung Barat", lat: -6.8461, lon: 107.5153 },
+        { keys: ["cimahi"], city: "Kota Cimahi", lat: -6.8722, lon: 107.5425 },
+        { keys: ["kota bogor", "bogor"], city: "Kota Bogor", lat: -6.5971, lon: 106.806 },
+        { keys: ["kabupaten bogor", "kab. bogor", "cibinong"], city: "Kab. Bogor", lat: -6.4797, lon: 106.8249 },
+        { keys: ["depok"], city: "Kota Depok", lat: -6.4025, lon: 106.7942 },
+        { keys: ["kota bekasi", "bekasi"], city: "Kota Bekasi", lat: -6.2383, lon: 106.9756 },
+        { keys: ["kabupaten bekasi", "kab. bekasi", "cikarang"], city: "Kab. Bekasi", lat: -6.2646, lon: 107.1525 },
+        { keys: ["kota tangerang", "tangerang"], city: "Kota Tangerang", lat: -6.1783, lon: 106.6319 },
+        { keys: ["tangerang selatan", "tangsel", "ciputat", "bsd"], city: "Kota Tangerang Selatan", lat: -6.2886, lon: 106.718 },
+        { keys: ["serang"], city: "Kota Serang", lat: -6.1104, lon: 106.164 },
+        { keys: ["cilegon"], city: "Kota Cilegon", lat: -6.0024, lon: 106.0111 },
+        { keys: ["sukabumi"], city: "Kota Sukabumi", lat: -6.9278, lon: 106.93 },
+        { keys: ["cianjur"], city: "Kab. Cianjur", lat: -6.8168, lon: 107.1425 },
+        { keys: ["garut"], city: "Kab. Garut", lat: -7.2279, lon: 107.9087 },
+        { keys: ["tasikmalaya"], city: "Kota Tasikmalaya", lat: -7.3274, lon: 108.2207 },
+        { keys: ["ciamis"], city: "Kab. Ciamis", lat: -7.3256, lon: 108.3539 },
+        { keys: ["cirebon"], city: "Kota Cirebon", lat: -6.732, lon: 108.5523 },
+        { keys: ["kuningan"], city: "Kab. Kuningan", lat: -6.9756, lon: 108.4836 },
+        { keys: ["majalengka"], city: "Kab. Majalengka", lat: -6.8364, lon: 108.2278 },
+        { keys: ["sumedang"], city: "Kab. Sumedang", lat: -6.8589, lon: 107.92 },
+        { keys: ["purwakarta"], city: "Kab. Purwakarta", lat: -6.5569, lon: 107.4436 },
+        { keys: ["karawang"], city: "Kab. Karawang", lat: -6.3058, lon: 107.3026 },
+        { keys: ["subang"], city: "Kab. Subang", lat: -6.5717, lon: 107.7617 },
+        { keys: ["indramayu"], city: "Kab. Indramayu", lat: -6.3275, lon: 108.3249 },
+        { keys: ["semarang"], city: "Kota Semarang", lat: -6.9667, lon: 110.4167 },
+        { keys: ["kabupaten semarang", "kab. semarang", "ungaran"], city: "Kab. Semarang", lat: -7.1394, lon: 110.405 },
+        { keys: ["salatiga"], city: "Kota Salatiga", lat: -7.3305, lon: 110.5084 },
+        { keys: ["surakarta", "solo"], city: "Kota Surakarta", lat: -7.5755, lon: 110.8243 },
+        { keys: ["sukoharjo"], city: "Kab. Sukoharjo", lat: -7.6836, lon: 110.8278 },
+        { keys: ["karanganyar"], city: "Kab. Karanganyar", lat: -7.5964, lon: 110.9511 },
+        { keys: ["wonogiri"], city: "Kab. Wonogiri", lat: -7.8136, lon: 110.9258 },
+        { keys: ["sragen"], city: "Kab. Sragen", lat: -7.4278, lon: 111.0211 },
+        { keys: ["klaten"], city: "Kab. Klaten", lat: -7.7058, lon: 110.6061 },
+        { keys: ["boyolali"], city: "Kab. Boyolali", lat: -7.5306, lon: 110.5969 },
+        { keys: ["magelang"], city: "Kota Magelang", lat: -7.4797, lon: 110.2178 },
+        { keys: ["pekalongan"], city: "Kota Pekalongan", lat: -6.8886, lon: 109.6753 },
+        { keys: ["tegal"], city: "Kota Tegal", lat: -6.8694, lon: 109.1402 },
+        { keys: ["purwokerto", "banyumas"], city: "Kab. Banyumas (Purwokerto)", lat: -7.4244, lon: 109.2302 },
+        { keys: ["purbalingga"], city: "Kab. Purbalingga", lat: -7.3894, lon: 109.3653 },
+        { keys: ["banjarnegara"], city: "Kab. Banjarnegara", lat: -7.3964, lon: 109.6967 },
+        { keys: ["kebumen"], city: "Kab. Kebumen", lat: -7.6689, lon: 109.6542 },
+        { keys: ["purworejo"], city: "Kab. Purworejo", lat: -7.7147, lon: 110.0086 },
+        { keys: ["wonosobo"], city: "Kab. Wonosobo", lat: -7.3622, lon: 109.9006 },
+        { keys: ["temanggung"], city: "Kab. Temanggung", lat: -7.3167, lon: 110.175 },
+        { keys: ["kendal"], city: "Kab. Kendal", lat: -6.9261, lon: 110.2036 },
+        { keys: ["batang"], city: "Kab. Batang", lat: -6.9078, lon: 109.7311 },
+        { keys: ["pemalang"], city: "Kab. Pemalang", lat: -6.8894, lon: 109.3828 },
+        { keys: ["brebes"], city: "Kab. Brebes", lat: -6.8731, lon: 109.0419 },
+        { keys: ["pati"], city: "Kab. Pati", lat: -6.7556, lon: 111.0381 },
+        { keys: ["rembang"], city: "Kab. Rembang", lat: -6.7081, lon: 111.3425 },
+        { keys: ["blora"], city: "Kab. Blora", lat: -6.9697, lon: 111.4167 },
+        { keys: ["grobogan", "purwodadi"], city: "Kab. Grobogan (Purwodadi)", lat: -7.0875, lon: 110.9156 },
+        { keys: ["kudus"], city: "Kab. Kudus", lat: -6.8048, lon: 110.8405 },
+        { keys: ["jepara"], city: "Kab. Jepara", lat: -6.5889, lon: 110.6684 },
+        { keys: ["yogyakarta", "jogja", "sleman", "bantul"], city: "D.I. Yogyakarta", lat: -7.7956, lon: 110.3695 },
+        { keys: ["kulon progo", "wates"], city: "Kab. Kulon Progo", lat: -7.8617, lon: 110.1575 },
+        { keys: ["gunungkidul", "gunung kidul", "wonosari"], city: "Kab. Gunungkidul", lat: -7.9658, lon: 110.6019 },
+        { keys: ["surabaya"], city: "Kota Surabaya", lat: -7.2575, lon: 112.7521 },
+        { keys: ["malang"], city: "Kota Malang", lat: -7.9666, lon: 112.6326 },
+        { keys: ["batu"], city: "Kota Batu", lat: -7.8711, lon: 112.5269 },
+        { keys: ["kediri"], city: "Kota Kediri", lat: -7.848, lon: 112.0178 },
+        { keys: ["blitar"], city: "Kota Blitar", lat: -8.0983, lon: 112.1681 },
+        { keys: ["madiun"], city: "Kota Madiun", lat: -7.6298, lon: 111.5239 },
+        { keys: ["mojokerto"], city: "Kota Mojokerto", lat: -7.4722, lon: 112.4336 },
+        { keys: ["pasuruan"], city: "Kota Pasuruan", lat: -7.6453, lon: 112.9075 },
+        { keys: ["probolinggo"], city: "Kota Probolinggo", lat: -7.7543, lon: 113.2159 },
+        { keys: ["jember"], city: "Kab. Jember", lat: -8.1721, lon: 113.6995 },
+        { keys: ["banyuwangi"], city: "Kab. Banyuwangi", lat: -8.2192, lon: 114.3691 },
+        { keys: ["situbondo"], city: "Kab. Situbondo", lat: -7.7061, lon: 114.0094 },
+        { keys: ["bondowoso"], city: "Kab. Bondowoso", lat: -7.9136, lon: 113.8214 },
+        { keys: ["lumajang"], city: "Kab. Lumajang", lat: -8.1336, lon: 113.2247 },
+        { keys: ["jombang"], city: "Kab. Jombang", lat: -7.5458, lon: 112.2336 },
+        { keys: ["nganjuk"], city: "Kab. Nganjuk", lat: -7.605, lon: 111.9036 },
+        { keys: ["tulungagung"], city: "Kab. Tulungagung", lat: -8.0658, lon: 111.9025 },
+        { keys: ["trenggalek"], city: "Kab. Trenggalek", lat: -8.05, lon: 111.7083 },
+        { keys: ["ponorogo"], city: "Kab. Ponorogo", lat: -7.8689, lon: 111.4619 },
+        { keys: ["ngawi"], city: "Kab. Ngawi", lat: -7.4042, lon: 111.4461 },
+        { keys: ["bojonegoro"], city: "Kab. Bojonegoro", lat: -7.1503, lon: 111.8817 },
+        { keys: ["tuban"], city: "Kab. Tuban", lat: -6.8978, lon: 112.0469 },
+        { keys: ["lamongan"], city: "Kab. Lamongan", lat: -7.1167, lon: 112.4167 },
+        { keys: ["bangkalan"], city: "Kab. Bangkalan", lat: -7.0456, lon: 112.7347 },
+        { keys: ["sampang"], city: "Kab. Sampang", lat: -7.1878, lon: 113.2394 },
+        { keys: ["pamekasan"], city: "Kab. Pamekasan", lat: -7.1569, lon: 113.4747 },
+        { keys: ["sumenep"], city: "Kab. Sumenep", lat: -7.0189, lon: 113.8642 },
+        { keys: ["sidoarjo"], city: "Kab. Sidoarjo", lat: -7.4478, lon: 112.7183 },
+        { keys: ["gresik"], city: "Kab. Gresik", lat: -7.1566, lon: 112.6555 },
+        { keys: ["denpasar"], city: "Kota Denpasar", lat: -8.6705, lon: 115.2126 },
+        { keys: ["badung", "kuta", "ubud", "canggu"], city: "Kab. Badung (Bali)", lat: -8.5819, lon: 115.177 },
+        { keys: ["gianyar"], city: "Kab. Gianyar", lat: -8.5449, lon: 115.3245 },
+        { keys: ["tabanan"], city: "Kab. Tabanan", lat: -8.5417, lon: 115.125 },
+        { keys: ["buleleng", "singaraja"], city: "Kab. Buleleng", lat: -8.112, lon: 115.0882 },
+        { keys: ["karangasem", "amlapura"], city: "Kab. Karangasem", lat: -8.4472, lon: 115.6069 },
+        { keys: ["klungkung", "semarapura"], city: "Kab. Klungkung", lat: -8.5372, lon: 115.4008 },
+        { keys: ["bangli"], city: "Kab. Bangli", lat: -8.4542, lon: 115.3547 },
+        { keys: ["jembrana", "negara"], city: "Kab. Jembrana", lat: -8.3575, lon: 114.6147 },
+        { keys: ["mataram"], city: "Kota Mataram", lat: -8.5833, lon: 116.1167 },
+        { keys: ["lombok barat", "gerung"], city: "Kab. Lombok Barat", lat: -8.6833, lon: 116.1167 },
+        { keys: ["lombok tengah", "praya"], city: "Kab. Lombok Tengah", lat: -8.705, lon: 116.2719 },
+        { keys: ["lombok timur", "selong"], city: "Kab. Lombok Timur", lat: -8.6456, lon: 116.5333 },
+        { keys: ["sumbawa"], city: "Kab. Sumbawa", lat: -8.4931, lon: 117.4214 },
+        { keys: ["bima"], city: "Kota Bima", lat: -8.46, lon: 118.7267 },
+        { keys: ["kupang"], city: "Kota Kupang", lat: -10.1772, lon: 123.607 },
+        { keys: ["ende"], city: "Kab. Ende", lat: -8.8431, lon: 121.6622 },
+        { keys: ["sikka", "maumere"], city: "Kab. Sikka", lat: -8.6186, lon: 122.2144 },
+        { keys: ["flores timur", "larantuka"], city: "Kab. Flores Timur", lat: -8.3422, lon: 122.9808 },
+        { keys: ["sumba timur", "waingapu"], city: "Kab. Sumba Timur", lat: -9.6544, lon: 120.2644 },
+        { keys: ["labuan bajo", "manggarai barat"], city: "Kab. Manggarai Barat (Labuan Bajo)", lat: -8.4964, lon: 119.8877 },
+        { keys: ["pontianak"], city: "Kota Pontianak", lat: -0.0263, lon: 109.3425 },
+        { keys: ["kubu raya", "sungai raya"], city: "Kab. Kubu Raya", lat: -0.0564, lon: 109.3944 },
+        { keys: ["mempawah"], city: "Kab. Mempawah", lat: 0.3636, lon: 108.9614 },
+        { keys: ["sanggau"], city: "Kab. Sanggau", lat: 0.1233, lon: 110.5833 },
+        { keys: ["ketapang"], city: "Kab. Ketapang", lat: -1.8561, lon: 109.9722 },
+        { keys: ["sintang"], city: "Kab. Sintang", lat: 0.0689, lon: 111.495 },
+        { keys: ["singkawang"], city: "Kota Singkawang", lat: 0.9098, lon: 108.9839 },
+        { keys: ["palangka raya", "palangkaraya"], city: "Kota Palangka Raya", lat: -2.2161, lon: 113.9108 },
+        { keys: ["kotawaringin barat", "pangkalan bun", "pangkalanbun"], city: "Kab. Kotawaringin Barat", lat: -2.6833, lon: 111.6333 },
+        { keys: ["kotawaringin timur", "sampit"], city: "Kab. Kotawaringin Timur", lat: -2.5386, lon: 112.9561 },
+        { keys: ["banjarmasin"], city: "Kota Banjarmasin", lat: -3.3186, lon: 114.5944 },
+        { keys: ["banjarbaru"], city: "Kota Banjarbaru", lat: -3.4572, lon: 114.8103 },
+        { keys: ["kabupaten banjar", "kab. banjar", "martapura"], city: "Kab. Banjar", lat: -3.4136, lon: 114.8511 },
+        { keys: ["tanah laut", "pelaihari"], city: "Kab. Tanah Laut", lat: -3.8069, lon: 114.7778 },
+        { keys: ["kotabaru"], city: "Kab. Kotabaru", lat: -3.2414, lon: 116.2244 },
+        { keys: ["tabalong", "tanjung"], city: "Kab. Tabalong", lat: -2.1642, lon: 115.3831 },
+        { keys: ["samarinda"], city: "Kota Samarinda", lat: -0.5022, lon: 117.1536 },
+        { keys: ["kutai kartanegara", "kukar", "tenggarong"], city: "Kab. Kutai Kartanegara", lat: -0.4258, lon: 116.9858 },
+        { keys: ["kutai timur", "sangatta"], city: "Kab. Kutai Timur", lat: 0.5022, lon: 117.5333 },
+        { keys: ["berau", "tanjung redeb"], city: "Kab. Berau", lat: 2.1506, lon: 117.4608 },
+        { keys: ["balikpapan"], city: "Kota Balikpapan", lat: -1.2379, lon: 116.8529 },
+        { keys: ["penajam paser utara", "penajam"], city: "Kab. Penajam Paser Utara", lat: -1.2519, lon: 116.5644 },
+        { keys: ["bontang"], city: "Kota Bontang", lat: 0.1333, lon: 117.5 },
+        { keys: ["tarakan"], city: "Kota Tarakan", lat: 3.3, lon: 117.6333 },
+        { keys: ["bulungan", "tanjung selor"], city: "Kab. Bulungan", lat: 2.8375, lon: 117.3653 },
+        { keys: ["makassar", "ujung pandang"], city: "Kota Makassar", lat: -5.1477, lon: 119.4327 },
+        { keys: ["gowa", "sungguminasa"], city: "Kab. Gowa", lat: -5.1997, lon: 119.4547 },
+        { keys: ["maros"], city: "Kab. Maros", lat: -5.0108, lon: 119.5736 },
+        { keys: ["bone", "watampone"], city: "Kab. Bone", lat: -4.5356, lon: 120.3208 },
+        { keys: ["bulukumba"], city: "Kab. Bulukumba", lat: -5.55, lon: 120.1833 },
+        { keys: ["wajo", "sengkang"], city: "Kab. Wajo", lat: -4.1292, lon: 120.0322 },
+        { keys: ["pinrang"], city: "Kab. Pinrang", lat: -3.8039, lon: 119.6558 },
+        { keys: ["parepare", "pare-pare"], city: "Kota Parepare", lat: -4.0135, lon: 119.6236 },
+        { keys: ["palopo"], city: "Kota Palopo", lat: -2.9926, lon: 120.1978 },
+        { keys: ["luwu", "belopa"], city: "Kab. Luwu", lat: -3.3842, lon: 120.3694 },
+        { keys: ["toraja", "makale", "rantepao"], city: "Kab. Tana Toraja / Toraja Utara", lat: -3.0994, lon: 119.8569 },
+        { keys: ["mamuju"], city: "Kab. Mamuju", lat: -2.6747, lon: 118.8886 },
+        { keys: ["majene"], city: "Kab. Majene", lat: -3.5403, lon: 118.9708 },
+        { keys: ["polewali mandar", "polman"], city: "Kab. Polewali Mandar", lat: -3.4325, lon: 119.3442 },
+        { keys: ["palu"], city: "Kota Palu", lat: -0.8917, lon: 119.8707 },
+        { keys: ["donggala"], city: "Kab. Donggala", lat: -0.6758, lon: 119.7444 },
+        { keys: ["poso"], city: "Kab. Poso", lat: -1.3958, lon: 120.7525 },
+        { keys: ["luwuk", "banggai"], city: "Kab. Banggai (Luwuk)", lat: -0.9517, lon: 122.7875 },
+        { keys: ["kendari"], city: "Kota Kendari", lat: -3.9985, lon: 122.5129 },
+        { keys: ["baubau", "bau-bau", "buton"], city: "Kota Baubau / Buton", lat: -5.4667, lon: 122.6 },
+        { keys: ["kolaka"], city: "Kab. Kolaka", lat: -4.05, lon: 121.6 },
+        { keys: ["gorontalo"], city: "Kota Gorontalo", lat: 0.5435, lon: 123.0568 },
+        { keys: ["manado"], city: "Kota Manado", lat: 1.4748, lon: 124.8421 },
+        { keys: ["tomohon"], city: "Kota Tomohon", lat: 1.3247, lon: 124.8358 },
+        { keys: ["kotamobagu"], city: "Kota Kotamobagu", lat: 0.7336, lon: 124.3167 },
+        { keys: ["minahasa", "tondano"], city: "Kab. Minahasa", lat: 1.3056, lon: 124.9139 },
+        { keys: ["bitung"], city: "Kota Bitung", lat: 1.4404, lon: 125.1904 },
+        { keys: ["ternate"], city: "Kota Ternate", lat: 0.7833, lon: 127.3667 },
+        { keys: ["tidore"], city: "Kota Tidore Kepulauan", lat: 0.6789, lon: 127.4369 },
+        { keys: ["halmahera", "tobelo", "sofifi"], city: "Halmahera / Maluku Utara", lat: 0.7386, lon: 127.5556 },
+        { keys: ["ambon"], city: "Kota Ambon", lat: -3.6954, lon: 128.1814 },
+        { keys: ["tual"], city: "Kota Tual", lat: -5.6333, lon: 132.75 },
+        { keys: ["sorong"], city: "Kota Sorong", lat: -0.8762, lon: 131.2558 },
+        { keys: ["raja ampat", "waisai"], city: "Kab. Raja Ampat", lat: -0.4333, lon: 130.825 },
+        { keys: ["manokwari"], city: "Kota Manokwari", lat: -0.8615, lon: 134.062 },
+        { keys: ["nabire"], city: "Kab. Nabire", lat: -3.3667, lon: 135.4833 },
+        { keys: ["timika", "mimika"], city: "Kab. Mimika (Timika)", lat: -4.5467, lon: 136.8836 },
+        { keys: ["jayapura"], city: "Kota Jayapura", lat: -2.5337, lon: 140.7181 },
+        { keys: ["merauke"], city: "Kab. Merauke", lat: -8.4667, lon: 140.4 }
+      ];
+
+      // Merapikan label kabupaten / kota & mencocokkan koordinat presisi
+      function parseBirthPlace(rawPlace) {
+        const cleaned = String(rawPlace || "").trim().replace(/\s+/g, " ");
+        if (!cleaned) return null;
+
+        const lower = cleaned.toLowerCase();
+
+        for (let i = 0; i < PLACE_COORDS.length; i++) {
+          const entry = PLACE_COORDS[i];
+          if (entry.keys.some((k) => lower.includes(k))) {
+            const latDir = entry.lat < 0 ? "LS" : "LU";
+            const lonDir = entry.lon < 0 ? "BB" : "BT";
+            const coordText = `${Math.abs(entry.lat).toFixed(4)}° ${latDir}, ${Math.abs(entry.lon).toFixed(4)}° ${lonDir}`;
+            const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${entry.lat.toFixed(4)},${entry.lon.toFixed(4)}`)}`;
+            const hemisphereNote = entry.lat < 0
+              ? "berada di belahan bumi selatan dengan ritme terang-gelap yang relatif seimbang sepanjang tahun"
+              : "berada di sekitar garis khatulistiwa atau belahan bumi utara dengan kehangatan iklim tropis";
+
+            return {
+              city: entry.city,
+              matched: true,
+              coordText,
+              mapUrl,
+              hemisphereNote
+            };
+          }
+        }
+
+        // Format rapi bila kabupaten/kota belum masuk kamus utama & hitung titik koordinat perkiraan wilayah Indonesia
+        let formattedCity = cleaned
+          .split(" ")
+          .map((w) => {
+            const wl = w.toLowerCase();
+            if (wl === "kab" || wl === "kab.") return "Kab.";
+            if (wl === "kota") return "Kota";
+            if (wl === "dki") return "DKI";
+            if (wl === "di" || wl === "d.i.") return "D.I.";
+            return wl.charAt(0).toUpperCase() + wl.slice(1);
+          })
+          .join(" ");
+
+        let hashA = 0;
+        let hashB = 0;
+        for (let i = 0; i < lower.length; i++) {
+          const code = lower.charCodeAt(i);
+          hashA = (hashA * 31 + code) % 997;
+          hashB = (hashB * 37 + code * (i + 1)) % 991;
+        }
+
+        let estLat = -6.8 + ((hashA % 100) - 50) * 0.04;
+        let estLon = 109.5 + ((hashB % 100) - 50) * 0.14;
+
+        if (lower.includes("aceh") || lower.includes("sumatera") || lower.includes("sumut") || lower.includes("sumbar") || lower.includes("riau") || lower.includes("jambi") || lower.includes("sumsel") || lower.includes("lampung") || lower.includes("bengkulu") || lower.includes("bangka") || lower.includes("batam")) {
+          estLat = -1.5 + ((hashA % 100) - 50) * 0.07;
+          estLon = 101.8 + ((hashB % 100) - 50) * 0.06;
+        } else if (lower.includes("kalimantan") || lower.includes("kaltim") || lower.includes("kalteng") || lower.includes("kalsel") || lower.includes("kalbar") || lower.includes("kaltara")) {
+          estLat = -0.8 + ((hashA % 100) - 50) * 0.06;
+          estLon = 114.2 + ((hashB % 100) - 50) * 0.06;
+        } else if (lower.includes("sulawesi") || lower.includes("sulsel") || lower.includes("sulut") || lower.includes("sulteng") || lower.includes("sultra") || lower.includes("gorontalo") || lower.includes("sulbar")) {
+          estLat = -2.2 + ((hashA % 100) - 50) * 0.06;
+          estLon = 121.4 + ((hashB % 100) - 50) * 0.06;
+        } else if (lower.includes("bali") || lower.includes("ntb") || lower.includes("ntt") || lower.includes("lombok") || lower.includes("sumbawa") || lower.includes("flores") || lower.includes("timor")) {
+          estLat = -8.6 + ((hashA % 100) - 50) * 0.03;
+          estLon = 118.2 + ((hashB % 100) - 50) * 0.07;
+        } else if (lower.includes("maluku") || lower.includes("papua") || lower.includes("irja")) {
+          estLat = -3.4 + ((hashA % 100) - 50) * 0.06;
+          estLon = 133.5 + ((hashB % 100) - 50) * 0.09;
+        }
+
+        const latDir = estLat < 0 ? "LS" : "LU";
+        const lonDir = estLon < 0 ? "BB" : "BT";
+        const coordText = `${Math.abs(estLat).toFixed(4)}° ${latDir}, ${Math.abs(estLon).toFixed(4)}° ${lonDir}`;
+        const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${estLat.toFixed(4)},${estLon.toFixed(4)}`)}`;
+        const hemisphereNote = estLat < 0
+          ? "berada di belahan bumi selatan dengan ritme terang-gelap yang relatif seimbang sepanjang tahun"
+          : "berada di sekitar garis khatulistiwa atau belahan bumi utara dengan kehangatan iklim tropis";
+
+        return {
+          city: formattedCity,
+          matched: false,
+          coordText,
+          mapUrl,
+          hemisphereNote
+        };
+      }
+
+      // Mengisi daftar saran kabupaten/kota untuk datalist dan menyegarkan koordinat langsung di kolom
+      function populatePlaceSuggestions() {
+        if (!birthPlaceDatalist) return;
+        const uniqueCities = Array.from(new Set(PLACE_COORDS.map((item) => item.city))).sort((a, b) => a.localeCompare(b, "id"));
+        birthPlaceDatalist.innerHTML = uniqueCities
+          .map((city) => `<option value="${escapeHtml(city)}"></option>`)
+          .join("");
+      }
+
+      function syncLivePlaceCoordinate() {
+        if (!birthPlaceInput || !livePlaceCoordEl || !livePlaceCoordTextEl || !livePlaceNameEl) return;
+        const parsed = parseBirthPlace(birthPlaceInput.value);
+        if (!parsed) {
+          livePlaceCoordEl.classList.add("hidden");
+          livePlaceCoordEl.classList.remove("flex");
+          livePlaceCoordTextEl.textContent = "";
+          livePlaceNameEl.textContent = "";
+          return;
+        }
+        livePlaceCoordTextEl.textContent = parsed.coordText;
+        livePlaceNameEl.textContent = parsed.matched ? `${parsed.city} · Terpetakan` : `${parsed.city} · Perkiraan Wilayah`;
+        livePlaceCoordEl.classList.remove("hidden");
+        livePlaceCoordEl.classList.add("flex");
+      }
+
+      populatePlaceSuggestions();
+      if (birthPlaceInput) {
+        birthPlaceInput.addEventListener("input", syncLivePlaceCoordinate);
+        birthPlaceInput.addEventListener("change", syncLivePlaceCoordinate);
+      }
+
+      // 12 Nuansa Fase Waktu Berdasarkan Tanggal & Bulan Lahir
+      const TWELVE_SEASONS = [
+        {
+          id: 0,
+          windowName: "Fase Awal Semi Terbuka",
+          element: "Gerak",
+          essence: "energi memulai, keberanian membuka langkah pertama, dan kepekaan terhadap arah yang hidup",
+          paradox: "mudah menyala di awal namun cepat kehilangan sabar bila alur berjalan terlalu lambat",
+          balanceTip: "merangkul ketekunan merapikan detail setelah langkah awal dimulai"
+        },
+        {
+          id: 1,
+          windowName: "Fase Tumbuh & Mengakar",
+          element: "Pijakan",
+          essence: "keteguhan menumbuhkan sesuatu secara nyata, kecintaan pada kenyamanan, dan kesetiaan pada proses",
+          paradox: "sangat kokoh menjaga yang sudah dibangun, tetapi bisa berat melepas pola yang sudah usang",
+          balanceTip: "membuka ruang bagi perubahan kecil yang menyegarkan"
+        },
+        {
+          id: 2,
+          windowName: "Fase Angin Bertukar Kabar",
+          element: "Pikiran",
+          essence: "kecepatan menangkap gagasan, rasa ingin tahu yang luas, dan keluwesan dalam berkomunikasi",
+          paradox: "pikiran penuh percikan menarik, namun gampang terpecah bila terlalu banyak pilihan",
+          balanceTip: "menjeda sejenak untuk memilih satu arah yang paling bermakna"
+        },
+        {
+          id: 3,
+          windowName: "Fase Naik ke Pelindung",
+          element: "Rasa",
+          essence: "kedalaman rasa, naluri menjaga rumah/kedekatan, dan kepekaan terhadap suasana hati sekitar",
+          paradox: "hangat dan protektif pada yang disayang, namun mudah menutup diri saat batin merasa tersentuh",
+          balanceTip: "mengungkapkan isi hati secara jujur sebelum menumpuk di dalam"
+        },
+        {
+          id: 4,
+          windowName: "Fase Puncak Cahaya Terang",
+          element: "Gerak",
+          essence: "kehangatan ekspresi, keberanian tampil memberi warna, dan kemurahan hati menghidupkan ruang",
+          paradox: "ingin memberi terang dan semangat, tetapi kadang merasa kurang dihargai saat memberi terlalu banyak",
+          balanceTip: "menghargai diri sendiri tanpa bergantung pada tepuk tangan luar"
+        },
+        {
+          id: 5,
+          windowName: "Fase Panen & Menyaring Butir",
+          element: "Pikiran",
+          essence: "ketelitian membaca pola, kemampuan memilah hal penting, dan kehendak membenahi dengan rapi",
+          paradox: "tajam melihat celah perbaikan, namun mudah menuntut kesempurnaan pada diri maupun sekitar",
+          balanceTip: "menerima hal yang cukup baik dan memberi ruang bernapas tanpa kritik berlebih"
+        },
+        {
+          id: 6,
+          windowName: "Fase Timbangan Keseimbangan",
+          element: "Pikiran",
+          essence: "pencarian keselarasan, kepekaan pada keadilan hubungan, dan kemampuan melihat dua sisi persoalan",
+          paradox: "ingin menjaga semua pihak tetap rukun, tetapi sering bimbang saat harus memilih satu sikap tegas",
+          balanceTip: "berani mengambil keputusan yang adil bagi diri sendiri juga"
+        },
+        {
+          id: 7,
+          windowName: "Fase Menyelam ke Kedalaman",
+          element: "Rasa",
+          essence: "intensitas batin, ketajaman intuisi, dan kemampuan bertransformasi melewati fase yang dalam",
+          paradox: "merasakan sesuatu dengan sangat dalam, namun sering memilih menyimpan rahasia batin sendirian",
+          balanceTip: "melepaskan beban lama yang sudah tidak perlu digenggam"
+        },
+        {
+          id: 8,
+          windowName: "Fase Busur Menuju Cakrawala",
+          element: "Gerak",
+          essence: "pandangan jauh ke depan, semangat belajar makna hidup, dan kejujuran yang terus terang",
+          paradox: "penuh optimisme dan arah luas, tetapi kadang kurang sabar pada rincian teknis di depan mata",
+          balanceTip: "memadukan visi besar dengan langkah kecil yang konsisten"
+        },
+        {
+          id: 9,
+          windowName: "Fase Puncak Bukit & Tanggung Jawab",
+          element: "Pijakan",
+          essence: "ketahanan jangka panjang, rasa tanggung jawab yang matang, dan kemampuan menyusun strategi",
+          paradox: "kuat menanggung beban besar, namun mudah lupa menikmati hasil sebelum target berikutnya terpasang",
+          balanceTip: "merayakan capaian yang sudah diraih sebelum melangkah lagi"
+        },
+        {
+          id: 10,
+          windowName: "Fase Jaringan Gagasan Baru",
+          element: "Pikiran",
+          essence: "cara pandang orisinal, kemandirian berpikir, dan kepedulian pada pola besar kehidupan bersama",
+          paradox: "mandiri dan visioner, tetapi kadang terasa berjarak secara emosional saat diajak terlalu dekat",
+          balanceTip: "menghubungkan gagasan jernih dengan kehangatan kehadiran yang nyata"
+        },
+        {
+          id: 11,
+          windowName: "Fase Muara & Samudra Halus",
+          element: "Rasa",
+          essence: "imajinasi yang mengalir, empati yang cair, dan kepekaan menangkap suasana yang tak terucap",
+          paradox: "mudah larut dalam empati dan bayangan, sehingga butuh pagar batas agar tidak ikut hanyut",
+          balanceTip: "menjaga pijakan harian yang sederhana agar aliran rasa tetap terarah"
+        }
+      ];
+
+      // Menentukan indeks musim (0–11) dari tanggal & bulan kelahiran
+      function getSeasonIndexFromDate(day, month) {
+        const d = Number(day);
+        const m = Number(month);
+        if (!d || !m) return null;
+
+        if ((m === 3 && d >= 21) || (m === 4 && d <= 19)) return 0;
+        if ((m === 4 && d >= 20) || (m === 5 && d <= 20)) return 1;
+        if ((m === 5 && d >= 21) || (m === 6 && d <= 20)) return 2;
+        if ((m === 6 && d >= 21) || (m === 7 && d <= 22)) return 3;
+        if ((m === 7 && d >= 23) || (m === 8 && d <= 22)) return 4;
+        if ((m === 8 && d >= 23) || (m === 9 && d <= 22)) return 5;
+        if ((m === 9 && d >= 23) || (m === 10 && d <= 22)) return 6;
+        if ((m === 10 && d >= 23) || (m === 11 && d <= 21)) return 7;
+        if ((m === 11 && d >= 22) || (m === 12 && d <= 21)) return 8;
+        if ((m === 12 && d >= 22) || (m === 1 && d <= 19)) return 9;
+        if ((m === 1 && d >= 20) || (m === 2 && d <= 18)) return 10;
+        return 11; // 19 Feb – 20 Mar
+      }
+
+      // Spesifikasi empat unsur utama
+      const ELEMENT_META = {
+        Gerak: {
+          label: "Gerak & Semangat",
+          shortNote: "Dorongan memulai, aksi nyata, dan menghidupkan suasana.",
+          colorClass: "bg-amberTone",
+          badgeClass: "bg-amberTone/12 text-amberTone border-amberTone/25",
+          compass: "Melangkah aktif pada hal yang membangkitkan semangat hidup, lalu memberi jeda sebelum kehabisan napas.",
+          quietSpace: "Ruang terbuka atau aktivitas fisik ringan yang melepas ketegangan otot dan kepala."
+        },
+        Rasa: {
+          label: "Rasa & Kedalaman",
+          shortNote: "Kepekaan batin, empati, dan kedalaman menangkap emosi.",
+          colorClass: "bg-plum",
+          badgeClass: "bg-plum/12 text-plum border-plum/25",
+          compass: "Mengikuti kepekaan batin yang tulus dan kejujuran emosi tanpa memaksa menelan semuanya sendirian.",
+          quietSpace: "Sudut yang hangat, hening, dan aman untuk mengurai perasaan tanpa harus buru-buru menjelaskan."
+        },
+        Pikiran: {
+          label: "Pikiran & Jernihnya Arah",
+          shortNote: "Cara mengurai ide, membaca pola, dan menyusun fokus.",
+          colorClass: "bg-sky",
+          badgeClass: "bg-sky/12 text-sky border-sky/25",
+          compass: "Mengurai persoalan menjadi poin-poin jernih, lalu memilih satu fokus utama agar tidak melebar.",
+          quietSpace: "Waktu menulis, membaca, atau menata catatan di ruang yang minim distraksi."
+        },
+        Pijakan: {
+          label: "Pijakan & Ketahanan",
+          shortNote: "Konsistensi harian, batas aman, dan daya tahan bertahap.",
+          colorClass: "bg-moss",
+          badgeClass: "bg-moss/12 text-moss border-moss/25",
+          compass: "Membangun rutinitas kecil yang konsisten dan dapat diandalkan hari demi hari.",
+          quietSpace: "Suasana teratur, membumi, dan sederhana yang memberi rasa aman serta kepastian."
+        }
+      };
+
+      const CAPACITY_INFO = {
+        hemat: {
+          label: "Hemat & Terjaga",
+          summary: "cenderung menakar energi sejak awal agar tidak cepat terkuras di tengah jalan",
+          tip: "menjaga cadangan tenaga tetap utuh tanpa rasa bersalah saat menolak agenda berlebih"
+        },
+        terukur: {
+          label: "Terukur & Stabil",
+          summary: "bergerak dengan ritme yang konsisten dan bertahap dari satu tahap ke tahap berikutnya",
+          tip: "memberi ruang lentur saat situasi menuntut perubahan ritme di luar rencana"
+        },
+        berlimpah: {
+          label: "Penuh & Mengalir",
+          summary: "mudah menyalurkan tenaga dan antusiasme saat melihat peluang atau makna yang hidup",
+          tip: "mengenali batas kelelahan sejak dini agar semangat tidak berubah menjadi keletihan"
+        },
+        gelombang: {
+          label: "Bergelombang",
+          summary: "mengalami puncak fokus dan energi yang kuat, disusul kebutuhan jeda pulih yang nyata",
+          tip: "menghormati fase surut sebagai bagian wajar dari irama pulih, bukan tanda kemunduran"
+        }
+      };
+
+      // Membangun seluruh data profil secara deterministik dari input pengguna
+      function buildProfileData(input) {
+        const fullInfo = analyzeNameNumerology(input.fullName);
+        const callInfo = analyzeNameNumerology(input.callName);
+        const placeInfo = parseBirthPlace(input.birthPlace);
+        const timeInfo = parseBirthTime24(input.birthTime);
+        const capacityInfo = CAPACITY_INFO[input.capacity] || null;
+
+        const hasDate = Boolean(input.day && input.month);
+        const seasonIdx = hasDate ? getSeasonIndexFromDate(input.day, input.month) : null;
+        const primarySeason = seasonIdx !== null ? TWELVE_SEASONS[seasonIdx] : null;
+        const oppositeSeason = seasonIdx !== null ? TWELVE_SEASONS[(seasonIdx + 6) % 12] : null;
+
+        // Perhitungan bobot 4 unsur secara deterministik
+        const weights = { Gerak: 25, Rasa: 25, Pikiran: 25, Pijakan: 25 };
+
+        if (primarySeason) {
+          weights[primarySeason.element] += 18;
+        }
+        if (oppositeSeason) {
+          weights[oppositeSeason.element] += 6;
+        }
+        if (fullInfo) {
+          const coreMod = ((fullInfo.coreNum - 1) % 4 + 4) % 4;
+          const soulMod = ((fullInfo.soulNum - 1) % 4 + 4) % 4;
+          const order = ["Gerak", "Rasa", "Pikiran", "Pijakan"];
+          weights[order[coreMod]] += 10;
+          weights[order[soulMod]] += 6;
+        }
+        if (callInfo) {
+          const outerMod = ((callInfo.outerNum - 1) % 4 + 4) % 4;
+          const order = ["Gerak", "Rasa", "Pikiran", "Pijakan"];
+          weights[order[outerMod]] += 5;
+        }
+        if (input.day) {
+          const dayRoot = reduceRoot(Number(input.day), false) || 1;
+          const order = ["Gerak", "Rasa", "Pikiran", "Pijakan"];
+          weights[order[(dayRoot - 1) % 4]] += 5;
+        }
+        if (input.month) {
+          const monthRoot = reduceRoot(Number(input.month), false) || 1;
+          const order = ["Gerak", "Rasa", "Pikiran", "Pijakan"];
+          weights[order[(monthRoot - 1) % 4]] += 4;
+        }
+        if (input.year) {
+          const yearRoot = reduceRoot(Number(input.year), false) || 1;
+          const order = ["Gerak", "Rasa", "Pikiran", "Pijakan"];
+          weights[order[(yearRoot - 1) % 4]] += 5;
+        }
+        if (timeInfo && timeInfo.provided && timeInfo.valid) {
+          weights[timeInfo.element] += 6;
+        }
+
+        const totalWeight = Object.values(weights).reduce((a, b) => a + b, 0);
+        const elementKeys = ["Gerak", "Rasa", "Pikiran", "Pijakan"];
+        const rawPcts = elementKeys.map((k) => {
+          const exact = (weights[k] / totalWeight) * 100;
+          return {
+            key: k,
+            exact,
+            pct: Math.floor(exact),
+            rem: exact - Math.floor(exact)
+          };
+        });
+
+        let diff = 100 - rawPcts.reduce((acc, item) => acc + item.pct, 0);
+        const byRem = [...rawPcts].sort((a, b) => b.rem - a.rem);
+        for (let i = 0; i < diff; i++) {
+          byRem[i % byRem.length].pct += 1;
+        }
+
+        const elements = rawPcts.map((item) => ({
+          key: item.key,
+          pct: item.pct,
+          meta: ELEMENT_META[item.key]
+        }));
+
+        const sortedElements = [...elements].sort((a, b) => b.pct - a.pct);
+        const dominantElem = sortedElements[0];
+        const quietElem = sortedElements[sortedElements.length - 1];
+
+        // Menentukan peran tiap unsur dan kalimat tarikan singkat
+        const enrichedElements = elements.map((el) => {
+          let roleLabel = "Penyeimbang";
+          let roleClass = "bg-parchment text-ink border-line";
+          let pullNote = `Menjaga ritme agar ${el.key.toLowerCase()} tetap hadir secara wajar.`;
+
+          if (el.key === dominantElem.key) {
+            roleLabel = "Paling Menonjol";
+            roleClass = el.meta.badgeClass;
+            pullNote = `Paling sering memimpin langkahmu, tapi kadang bikin sisi ${quietElem.key.toLowerCase()} ikut ketarik.`;
+          } else if (el.key === quietElem.key) {
+            roleLabel = "Butuh Dirawat";
+            roleClass = "bg-parchment text-muted border-line";
+            pullNote = `Sering kalah suara pas ${dominantElem.key.toLowerCase()} lagi kencang, padahal penting buat ngecas diri.`;
+          }
+
+          return {
+            ...el,
+            roleLabel,
+            roleClass,
+            pullNote
+          };
+        });
+
+        const monthNames = [
+          "", "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+          "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+        ];
+
+        const formattedBirthDate = hasDate
+          ? `${input.day ? `${input.day} ` : ""}${monthNames[Number(input.month)]}${input.year ? ` ${input.year}` : ""}`
+          : (input.year ? `Tahun ${input.year}` : "");
+
+        const greetingName = callInfo
+          ? callInfo.cleaned
+          : (fullInfo ? fullInfo.cleaned.split(/\s+/)[0] : "Kamu");
+
+        const responseCards = [
+          {
+            tag: "Pas Mulai Jalan",
+            title: `Melangkah Lewat ${dominantElem.meta.label} (${dominantElem.pct}%)`,
+            body: `Saat memulai sesuatu, ${greetingName} paling gampang nyambung lewat ${dominantElem.meta.label} (${dominantElem.pct}%). ${dominantElem.meta.shortNote}${primarySeason ? ` Dari arti tanggal lahirmu, alur ini sering ketemu sama ${primarySeason.essence}.` : ""}`,
+            tension: primarySeason
+              ? `Sisi yang sering tarik-menarik: ${primarySeason.paradox}.`
+              : "Perlu hati-hati biar semangat di awal nggak bikin napas habis sebelum garis akhir."
+          },
+          {
+            tag: "Pas Lagi Tertekan",
+            title: "Menjaga Pusat Saat Tekanan Naik",
+            body: `Waktu suasana mulai padat atau bikin tegang, pola batin ${greetingName} cenderung menguatkan pertahanan utama${capacityInfo ? ` dengan irama ${capacityInfo.label.toLowerCase()} (${capacityInfo.summary})` : ""}.`,
+            tension: fullInfo
+              ? `Celah yang sering muncul: ${fullInfo.coreProfile.paradox}.`
+              : "Kadang yang kelihatan tenang di luar justru lagi nyusun banyak hal di dalam."
+          },
+          {
+            tag: "Pas Lagi Ngobrol & Nyambung",
+            title: callInfo
+              ? `Nuansa Sapaan "${callInfo.cleaned}" (${callInfo.outerProfile.archetype})`
+              : (fullInfo ? `Nuansa Nama "${fullInfo.cleaned}" (${fullInfo.outerProfile.archetype})` : "Cara Hadir di Obrolan Sehari-Hari"),
+            body: callInfo
+              ? `Di sekitar orang lain, sapaan "${callInfo.cleaned}" membawa kesan ${callInfo.outerProfile.outerImpression} dan dorongan ${callInfo.outerProfile.innerDrive}.`
+              : (fullInfo
+                ? `Dalam interaksi sehari-hari, kesan yang sering tertangkap adalah ${fullInfo.outerProfile.outerImpression}.`
+                : "Saat ngobrol dengan orang lain, kamu lebih gampang nyambung kalau suasananya terasa tulus dan nggak dibuat-buat."),
+            tension: callInfo
+              ? `Tarik-menarik yang sering kerasa: ${callInfo.outerProfile.paradox}.`
+              : "Kadang pengin menjaga suasana tetap hangat, padahal kebutuhan sendiri juga pengin diutarakan."
+          },
+          {
+            tag: "Pas Butuh Ngecas Ulang",
+            title: `Balik Lagi ke ${quietElem.meta.label} (${quietElem.pct}%)`,
+            body: `Cara paling ampuh buat ngecas energi ${greetingName} itu ngasih ruang ke sisi yang porsinya paling kalem—yaitu ${quietElem.meta.label} (${quietElem.pct}%). ${quietElem.meta.quietSpace}${capacityInfo ? ` Cocok juga buat ${capacityInfo.tip}.` : ""}`,
+            tension: oppositeSeason
+              ? `Nyambungin ritme harian sama sisi penyeimbangmu: ${oppositeSeason.balanceTip}.`
+              : "Berani ambil jeda dulu sebelum maksa diri jalan lagi."
+          }
+        ];
+
+        // Menyusun langkah praktis personal yang berbeda tiap kombinasi hasil analisa
+        const practiceSteps = [];
+
+        // Langkah 1: Disesuaikan dengan unsur paling menonjol + unsur paling kalem
+        const dominantPracticeByKey = {
+          Gerak: `Pas api ${dominantElem.meta.label} (${dominantElem.pct}%) lagi tinggi, tarik napas satu kali sebelum bilang "iya" ke ajakan baru—lalu beri ruang buat ${quietElem.meta.label} (${quietElem.pct}%) ikut bersuara.`,
+          Rasa: `Waktu ${dominantElem.meta.label} (${dominantElem.pct}%) nangkep suasana terlalu dalam, coba tulis satu kalimat jujur tentang apa yang lagi kamu rasain sebelum merespons orang lain, biar ${quietElem.meta.label} (${quietElem.pct}%) nggak ketindihan.`,
+          Pikiran: `Kalau kepala lagi muter kencang lewat ${dominantElem.meta.label} (${dominantElem.pct}%), pilih satu hal kecil aja buat diberesin hari ini dan pindah ke pijakan ${quietElem.meta.label} (${quietElem.pct}%) tanpa overthinking.`,
+          Pijakan: `Saat ${dominantElem.meta.label} (${dominantElem.pct}%) udah bikin alurmu rapi, coba selipin satu variasi kecil yang ringan biar ${quietElem.meta.label} (${quietElem.pct}%) nggak mati rasa atau kaku.`
+        };
+        practiceSteps.push({
+          badge: "Latihan #1 · Keseimbangan Unsur",
+          title: `Menghubungkan ${dominantElem.meta.label} & ${quietElem.meta.label}`,
+          detail: dominantPracticeByKey[dominantElem.key] || dominantPracticeByKey.Pikiran
+        });
+        // Langkah 2: Disesuaikan dengan nuansa tanggal lahir & sisi penyeimbangnya (atau jatuh ke irama tenaga bila belum dipilih)
+        if (primarySeason && oppositeSeason) {
+          practiceSteps.push({
+            badge: "Latihan #2 · Arti Tanggal Lahirmu",
+            title: `Mempraktikkan ${oppositeSeason.balanceTip.charAt(0).toUpperCase() + oppositeSeason.balanceTip.slice(1)}`,
+            detail: `Dari arti tanggal lahirmu, bagian yang sering tarik-menarik adalah ${primarySeason.paradox}. Coba biasakan ${oppositeSeason.balanceTip} biar tetap selaras dengan ${primarySeason.essence} lewat satu langkah kecil yang gampang kamu ulang.`
+          });
+        } else if (capacityInfo) {
+          practiceSteps.push({
+            badge: `Latihan #2 · Irama ${capacityInfo.label}`,
+            title: `Menyesuaikan Langkah dengan Tenaga ${capacityInfo.label}`,
+            detail: `Karena tenagamu cenderung ${capacityInfo.summary}, latih diri buat ${capacityInfo.tip} sebelum energi beneran drop.`
+          });
+        } else {
+          practiceSteps.push({
+            badge: "Latihan #2 · Jeda Sadar",
+            title: "Mengecek Sinyal Tubuh di Pertengahan Hari",
+            detail: `Luangkan dua menit di tengah hari buat nanya ke diri sendiri: "Sekarang aku lagi butuh gerak, butuh didengerin, atau butuh diam sebentar?"`
+          });
+        }
+
+        // Langkah 3: Disesuaikan dengan pola nama, jam lahir, atau irama tenaga
+        if (fullInfo) {
+          practiceSteps.push({
+            badge: `Latihan #3 · Pola Nama (${fullInfo.cleaned})`,
+            title: `Melatih ${fullInfo.coreProfile.balance.charAt(0).toUpperCase() + fullInfo.coreProfile.balance.slice(1)}`,
+            detail: `Dari susunan namamu (${fullInfo.coreProfile.archetype}), tantangannya sering ada di: ${fullInfo.coreProfile.paradox}. Latih ${fullInfo.coreProfile.balance} di situasi kecil hari ini.`
+          });
+        } else if (timeInfo && timeInfo.provided && timeInfo.valid) {
+          practiceSteps.push({
+            badge: `Latihan #3 · Jejak Jam ${timeInfo.formatted}`,
+            title: `Menghormati Fase ${timeInfo.phase}`,
+            detail: `Karena waktu lahirmu dekat dengan nuansa ${timeInfo.note}, coba jaga transisi harianmu biar nggak loncat mendadak dari sibuk ke rebahan tanpa jeda.`
+          });
+        } else if (callInfo) {
+          practiceSteps.push({
+            badge: `Latihan #3 · Sapaan "${callInfo.cleaned}"`,
+            title: "Menjaga Keaslian Saat Berinteraksi",
+            detail: `Saat disapa "${callInfo.cleaned}" di obrolan sehari-hari, perhatikan apakah kamu lagi ngomong karena tulus pengin nyambung atau cuma biar suasana enak.`
+          });
+        } else {
+          practiceSteps.push({
+            badge: "Latihan #3 · Menutup Hari dengan Tenang",
+            title: "Satu Hal yang Disyukuri & Satu yang Dilepasin",
+            detail: `Sebelum tidur, sebutin satu hal kecil yang jalan lumayan hari ini dan satu pikiran berat yang boleh ditaruh dulu sampai besok.`
+          });
+        }
+
+        return {
+          greetingName,
+          fullInfo,
+          callInfo,
+          placeInfo,
+          timeInfo,
+          capacityInfo,
+          formattedBirthDate,
+          primarySeason,
+          oppositeSeason,
+          elements,
+          dominantElem,
+          quietElem,
+          enrichedElements,
+          responseCards,
+          practiceSteps
+        };
+      }
+
+      // Merender seluruh hasil analisis ke wadah utama
+      function renderProfile(data) {
+        const {
+          greetingName,
+          fullInfo,
+          callInfo,
+          placeInfo,
+          timeInfo,
+          capacityInfo,
+          formattedBirthDate,
+          primarySeason,
+          oppositeSeason,
+          dominantElem,
+          quietElem,
+          enrichedElements,
+          responseCards
+        } = data;
+
+        const summaryBadges = [];
+        if (formattedBirthDate) summaryBadges.push(`Lahir: ${formattedBirthDate}`);
+        if (timeInfo && timeInfo.provided && timeInfo.valid) summaryBadges.push(`Waktu: ${timeInfo.formatted}`);
+        if (placeInfo) summaryBadges.push(`Daerah: ${placeInfo.city}`);
+        if (capacityInfo) summaryBadges.push(`Irama: ${capacityInfo.label}`);
+
+        const elementBarsHtml = enrichedElements.map((el) => `
+          <div class="luxury-box border border-line bg-paper p-4">
+            <div class="flex items-center justify-between gap-2 text-sm font-semibold text-ink">
+              <span>${escapeHtml(el.meta.label)}</span>
+              <div class="flex items-center gap-2">
+                <span class="luxury-pill border px-2.5 py-0.5 text-[11px] font-semibold ${el.roleClass}">${escapeHtml(el.roleLabel)}</span>
+                <span>${el.pct}%</span>
+              </div>
+            </div>
+            <p class="mt-1 text-xs leading-relaxed text-muted">${escapeHtml(el.meta.shortNote)}</p>
+            <div class="mt-2.5 h-2.5 w-full overflow-hidden rounded-full bg-parchment">
+              <div class="h-full rounded-full ${el.meta.colorClass}" style="width: ${el.pct}%"></div>
+            </div>
+            <p class="mt-2 text-xs leading-relaxed text-ink/85">${escapeHtml(el.pullNote)}</p>
+          </div>
+        `).join("");
+
+        const responseCardsHtml = responseCards.map((card) => `
+          <div class="luxury-box flex flex-col justify-between border border-line bg-paper p-5">
+            <div>
+              <span class="luxury-pill inline-block border border-gold/30 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">
+                ${escapeHtml(card.tag)}
+              </span>
+              <h3 class="mt-2.5 font-serif text-2xl font-semibold text-ink">${escapeHtml(card.title)}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">${escapeHtml(card.body)}</p>
+            </div>
+            <p class="mt-3.5 border-t border-line/70 pt-3 text-xs font-medium leading-relaxed text-ink/85">
+              ${escapeHtml(card.tension)}
+            </p>
+          </div>
+        `).join("");
+
+        <!-- Bagian 03: Cerita dari Huruf Nama -->
+        let nameSectionHtml = "";
+        if (fullInfo || callInfo) {
+          const cards = [];
+          if (fullInfo) {
+            cards.push(`
+              <div class="luxury-box border border-line bg-paper p-5">
+                <span class="text-xs font-semibold uppercase tracking-wider text-moss">Nama Lengkap · ${escapeHtml(fullInfo.cleaned)}</span>
+                <h3 class="mt-1 font-serif text-2xl font-semibold text-ink">
+                  Corak Utama — ${escapeHtml(fullInfo.coreProfile.archetype)}
+                </h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                  Di balik nama lengkapmu ada dorongan untuk ${escapeHtml(fullInfo.coreProfile.coreTrait)}, dengan kebutuhan batin berupa ${escapeHtml(fullInfo.coreProfile.innerDrive)}.
+                </p>
+                <p class="mt-2.5 text-sm leading-relaxed text-ink/90">
+                  <strong>Sisi yang sering tarik-menarik:</strong> ${escapeHtml(fullInfo.coreProfile.paradox)}.
+                </p>
+              </div>
+            `);
+          }
+          if (callInfo) {
+            cards.push(`
+              <div class="luxury-box border border-line bg-paper p-5">
+                <span class="text-xs font-semibold uppercase tracking-wider text-sky">Nama Panggilan · ${escapeHtml(callInfo.cleaned)}</span>
+                <h3 class="mt-1 font-serif text-2xl font-semibold text-ink">
+                  Nuansa Sapaan — ${escapeHtml(callInfo.outerProfile.archetype)}
+                </h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                  Saat orang memanggilmu "${escapeHtml(callInfo.cleaned)}", nuansa yang paling sering terasa adalah ${escapeHtml(callInfo.outerProfile.outerImpression)} dan ${escapeHtml(callInfo.outerProfile.coreTrait)}.
+                </p>
+                <p class="mt-2.5 text-sm leading-relaxed text-ink/90">
+                  <strong>Titik keseimbangannya:</strong> ${escapeHtml(callInfo.outerProfile.balance)}.
+                </p>
+              </div>
+            `);
+          }
+          nameSectionHtml = `<div class="grid grid-cols-1 gap-4 ${cards.length > 1 ? "md:grid-cols-2" : ""}">${cards.join("")}</div>`;
+        } else {
+          nameSectionHtml = `
+            <div class="luxury-box border border-line bg-paper p-5 text-sm leading-relaxed text-muted sm:text-base">
+              Kamu belum mengisi nama lengkap atau nama panggilan. Kalau diisi nanti, bagian ini akan menguraikan corak nama dan nuansa sapaan yang sering menyertai keseharianmu.
+            </div>
+          `;
+        }
+
+        // Bagian 04: 12 Musim, Penyeimbang & Tempat/Jam Lahir
+        let seasonSectionHtml = "";
+        if (primarySeason && oppositeSeason) {
+          seasonSectionHtml = `
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div class="luxury-box border border-line bg-paper p-5">
+                <span class="text-xs font-semibold uppercase tracking-wider text-sky">Arti Tanggal Lahirmu</span>
+                <h3 class="mt-1 font-serif text-2xl font-semibold text-ink">${escapeHtml(primarySeason.essence.charAt(0).toUpperCase() + primarySeason.essence.slice(1))}</h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                  Pembacaan tanggal lahirmu paling kuat terhubung dengan unsur <strong class="text-ink">${escapeHtml(primarySeason.element)}</strong>, yang sering memunculkan ${escapeHtml(primarySeason.essence)}.
+                </p>
+                <p class="mt-2 text-xs leading-relaxed text-ink/85">
+                  <strong>Sisi yang sering tarik-menarik:</strong> ${escapeHtml(primarySeason.paradox)}.
+                </p>
+              </div>
+              <div class="luxury-box border border-line bg-paper p-5">
+                <span class="text-xs font-semibold uppercase tracking-wider text-moss">Sisi Penyeimbang Dirimu</span>
+                <h3 class="mt-1 font-serif text-2xl font-semibold text-ink">${escapeHtml(oppositeSeason.balanceTip.charAt(0).toUpperCase() + oppositeSeason.balanceTip.slice(1))}</h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                  Sisi penyeimbang dari nuansa <strong class="text-ink">${escapeHtml(oppositeSeason.element)}</strong> ini membantu menjaga ritme dirimu lewat cara ${escapeHtml(oppositeSeason.balanceTip)}.
+                </p>
+              </div>
+            </div>
+          `;
+        } else {
+          seasonSectionHtml = `
+            <div class="luxury-box border border-line bg-paper p-5 text-sm leading-relaxed text-muted sm:text-base">
+              Pilih <strong>Tanggal Lahir</strong> dan <strong>Bulan Lahir</strong> pada formulir untuk memunculkan musim kelahiran serta sisi penyeimbangnya.
+            </div>
+          `;
+        }
+
+        const placeTimeNotes = [];
+        if (placeInfo) {
+          placeTimeNotes.push(`
+            <div class="luxury-box border border-line bg-paper p-5">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="text-xs font-semibold uppercase tracking-wider text-amberTone">Daerah Kelahiran · ${escapeHtml(placeInfo.city)}</span>
+                <span class="luxury-pill border border-line bg-white px-3 py-1 font-mono text-xs font-semibold text-ink">${escapeHtml(placeInfo.coordText)}</span>
+              </div>
+              <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                Wilayah ini ${escapeHtml(placeInfo.hemisphereNote)}${placeInfo.matched ? " dengan titik koordinat yang sudah dipetakan." : " dengan titik koordinat perkiraan wilayah."}
+              </p>
+              <div class="mt-3 flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  data-copy-coord="${escapeHtml(placeInfo.coordText)}"
+                  class="copy-coord-btn luxury-pill border border-gold/40 bg-white px-3.5 py-1.5 text-xs font-semibold text-ink transition hover:border-gold"
+                >
+                  Salin Koordinat
+                </button>
+                <a
+                  href="${escapeHtml(placeInfo.mapUrl)}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="luxury-pill border border-line bg-white px-3.5 py-1.5 text-xs font-semibold text-sky transition hover:border-sky"
+                >
+                  Lihat Titik di Peta
+                </a>
+              </div>
+            </div>
+          `);
+        }
+
+        if (timeInfo && timeInfo.provided && timeInfo.valid) {
+          placeTimeNotes.push(`
+            <div class="luxury-box border border-line bg-paper p-5">
+              <span class="text-xs font-semibold uppercase tracking-wider text-sky">Waktu Kelahiran · ${escapeHtml(timeInfo.formatted)} (${escapeHtml(timeInfo.phase)})</span>
+              <p class="mt-1.5 text-sm leading-relaxed text-muted sm:text-base">
+                Waktu lahir ini berada pada fase <strong class="text-ink">${escapeHtml(timeInfo.phase)}</strong>—${escapeHtml(timeInfo.note)}.
+              </p>
+            </div>
+          `);
+        }
+
+        // Bagian 05: Lima Lapisan Sisi Diri (Bahasa Ngobrol Teman Sebaya)
+        const personaText = callInfo
+          ? `Pas ketemu orang atau lagi di ruang sosial, wajah yang paling gampang kelihatan dari dirimu itu bawaan "${escapeHtml(callInfo.cleaned)}": ${escapeHtml(callInfo.outerProfile.outerImpression)}. Di balik itu, kamu juga punya sisi lain yang nggak selalu harus tampil di depan.`
+          : `Di luar sana, kamu sering nunjukin sisi yang ${escapeHtml(dominantElem.meta.shortNote.toLowerCase())} Itu bikin orang gampang ngebaca gerakmu, tapi sisi di dalam dirimu tetap punya cerita dan rasa sendiri.`;
+
+        const egoText = fullInfo
+          ? `Pusat "aku" yang paling kerasa di dalam dirimu cenderung ngarah ke ${escapeHtml(fullInfo.coreProfile.coreTrait)}. Itu yang bikin kamu merasa "ini banget gue", meskipun kadang suka bentrok sama tuntutan keadaan.`
+          : `Pusat "aku" di dirimu paling kuat kerasa lewat ${escapeHtml(dominantElem.meta.label)} (${dominantElem.pct}%). Pas lagi on, bagian ini yang nyetir keputusan—tapi kadang gampang capek kalau jalan sendirian terus.`;
+
+        const shadowText = fullInfo
+          ? `Ada bagian dari dirimu yang sering kamu simpen atau tahan sendiri, terutama pas lagi ngadepin: ${escapeHtml(fullInfo.coreProfile.paradox)}. Bukan buat dijauhin, justru sering nyimpen tenaga atau kejujuran yang kamu butuhin.`
+          : `Kadang ada sisi yang sering kamu tahan biar nggak ngerepotin atau biar kelihatan aman—misalnya dorongan ${escapeHtml(quietElem.meta.label)} (${quietElem.pct}%) yang ketutup sama kesibukan harian. Semakin sering disapa pelan-pelan, makin nggak bikin ngambek di belakang.`;
+
+          const innerSoftnessText = oppositeSeason
+          ? `Di balik sisi yang kuat atau sibuk ngatur keadaan, ada bagian yang lebih lembut, peka, dan butuh ruang buat ngerasa aman—terasa saat kamu ${escapeHtml(oppositeSeason.balanceTip)} yang melengkapi ${escapeHtml(oppositeSeason.essence)} dari arti tanggal lahirmu.`
+          : `Di dalam dirimu juga ada sisi lembut dan peka yang sering baru kerasa pas suasana lagi sepi atau pas kamu lagi deket sama orang yang beneran bikin nyaman. Bagian ini nggak lemah kok—justru bikin kamu bisa ngerasain hal-hal yang sering kelewat.`;
+
+        const wholeSelfText = `Menjadi utuh itu bukan berarti memaksa semua sisi di dalam dirimu akur 100% setiap hari. Anggap aja ${escapeHtml(greetingName)} kayak satu tim dalam satu rumah: ada yang sigap gerak, ada yang mikir jernih, ada yang jaga ritme, dan ada yang ngerasain dalam. Pas semuanya diajak duduk bareng tanpa saling nyalahin, paradoks di dalam dirimu berubah jadi bahan bakar yang bikin kamu makin hidup dan utuh.`;
+
+        // Bagian 06: Kompas Langkah & Ruang Tenang
+        const compassHtml = `
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div class="luxury-box border border-line bg-paper p-5">
+              <span class="text-xs font-semibold uppercase tracking-wider text-moss">Kompas Langkah</span>
+              <h3 class="mt-1 font-serif text-2xl font-semibold text-ink">${escapeHtml(dominantElem.meta.label)}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">${escapeHtml(dominantElem.meta.compass)}</p>
+            </div>
+            <div class="luxury-box border border-line bg-paper p-5">
+              <span class="text-xs font-semibold uppercase tracking-wider text-sky">Ruang Tenang &amp; Pulih</span>
+              <h3 class="mt-1 font-serif text-2xl font-semibold text-ink">${escapeHtml(quietElem.meta.label)}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">${escapeHtml(quietElem.meta.quietSpace)}</p>
+            </div>
+          </div>
+        `;
+
+        // Bagian 07: Ruang Integrasi Diri (Menyatukan Paradoks & Tarik-Menarik)
+        const paradoxPair = fullInfo
+          ? `${fullInfo.coreProfile.paradox}`
+          : (primarySeason
+            ? `${primarySeason.paradox}`
+            : `sisi ${dominantElem.meta.label.toLowerCase()} (${dominantElem.pct}%) yang pengin terus jalan berhadapan dengan sisi ${quietElem.meta.label.toLowerCase()} (${quietElem.pct}%) yang butuh jeda`);
+
+        const integrationBridge = fullInfo
+          ? `${fullInfo.coreProfile.balance}`
+          : (oppositeSeason
+            ? `${oppositeSeason.balanceTip}`
+            : `memberi giliran yang adil antara ${dominantElem.meta.label.toLowerCase()} dan ${quietElem.meta.label.toLowerCase()}`);
+
+        const integrationHtml = `
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div class="luxury-box border border-line bg-paper p-5">
+              <span class="text-xs font-semibold uppercase tracking-wider text-plum">Titik Tarik-Menarik</span>
+              <h3 class="mt-1 font-serif text-2xl font-semibold text-ink">
+                ${escapeHtml(dominantElem.meta.label)} (${dominantElem.pct}%) &harr; ${escapeHtml(quietElem.meta.label)} (${quietElem.pct}%)
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                Di dalam diri ${escapeHtml(greetingName)}, ketegangan sering muncul karena ${escapeHtml(paradoxPair)}. Saat satu sisi terlalu mendominasi, sisi lainnya ikut minta didengar.
+              </p>
+            </div>
+
+            <div class="luxury-box border border-line bg-paper p-5">
+              <span class="text-xs font-semibold uppercase tracking-wider text-moss">Jembatan Keutuhan Hari Ini</span>
+              <h3 class="mt-1 font-serif text-2xl font-semibold text-ink">
+                Rangkai Jadi Satu Ritme yang Utuh
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                Keutuhan bukan berarti menghilangkan sisi yang bertolak belakang, melainkan ${escapeHtml(integrationBridge)}. Cukup mulai dari satu langkah kecil hari ini tanpa memaksa diri sempurna.
+              </p>
+            </div>
+          </div>
+        `;
+
+        // Bagian 08: Langkah Praktis Harian Sesuai Kombinasi Analisa
+        const practiceStepsHtml = data.practiceSteps.map((step) => `
+          <div class="luxury-box border border-line bg-paper p-5">
+            <span class="luxury-pill inline-block border border-gold/30 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">
+              ${escapeHtml(step.badge)}
+            </span>
+            <h3 class="mt-2.5 font-serif text-2xl font-semibold text-ink">${escapeHtml(step.title)}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">${escapeHtml(step.detail)}</p>
+          </div>
+        `).join("");
+
+        resultEl.innerHTML = `
+          <div class="animate-rise space-y-6">
+            <!-- Bilah Simpan / Cetak Catatan -->
+            <div class="no-print luxury-box flex flex-wrap items-center justify-between gap-3 border border-line bg-parchment/85 px-5 py-3.5">
+              <span id="actionFeedback" class="text-xs font-medium text-muted sm:text-sm">
+                Catatan bacaan siap disimpan atau dicetak buat dibaca ulang pelan-pelan.
+              </span>
+              <div class="flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  id="copySummaryBtn"
+                  class="luxury-pill border border-gold/40 bg-white px-4 py-2 text-xs font-semibold text-ink transition hover:border-gold"
+                >
+                  Salin Ringkasan
+                </button>
+                <button
+                  type="button"
+                  id="printNoteBtn"
+                  class="luxury-pill border border-line bg-white px-4 py-2 text-xs font-semibold text-muted transition hover:border-gold hover:text-ink"
+                >
+                  Cetak Catatan
+                </button>
+              </div>
+            </div>
+
+            <!-- Bagian 01 -->
+            <section class="editorial-card border border-line bg-white/95 p-6 sm:p-8">
+              <div class="relative z-10">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-wider text-sky">01 · Gambaran Utama &amp; Empat Unsur</span>
+                  <div class="flex flex-wrap gap-1.5">
+                    ${summaryBadges.map((b) => `<span class="luxury-pill border border-line bg-parchment px-3 py-1 text-xs font-medium text-ink">${escapeHtml(b)}</span>`).join("")}
+                  </div>
+                </div>
+                <h2 class="mt-2 font-serif text-3xl font-semibold text-ink sm:text-4xl">
+                  Hai ${escapeHtml(greetingName)}, ini potret singkat dirimu
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                  Yang paling kerasa menonjol di kamu sekarang adalah <strong class="text-ink">${escapeHtml(dominantElem.meta.label)} (${dominantElem.pct}%)</strong>, sementara <strong class="text-ink">${escapeHtml(quietElem.meta.label)} (${quietElem.pct}%)</strong> perlu sering diajak rehat dan diperhatiin biar nggak ketimpangan.
+                </p>
+                <div class="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  ${elementBarsHtml}
+                </div>
+              </div>
+            </section>
+
+            <!-- Bagian 02 -->
+            <section class="editorial-card border border-line bg-white/95 p-6 sm:p-8">
+              <div class="relative z-10">
+                <span class="text-xs font-semibold uppercase tracking-wider text-amberTone">02 · Cara Kamu Merespons</span>
+                <h2 class="mt-1 font-serif text-3xl font-semibold text-ink sm:text-4xl">
+                  Pas Mulai Jalan, Lagi Tertekan, Ngobrol &amp; Ngecas Diri
+                </h2>
+                <div class="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
+                  ${responseCardsHtml}
+                </div>
+              </div>
+            </section>
+
+            <!-- Bagian 03 -->
+            <section class="editorial-card border border-line bg-white/95 p-6 sm:p-8">
+              <div class="relative z-10">
+                <span class="text-xs font-semibold uppercase tracking-wider text-moss">03 · Cerita dari Huruf Namamu</span>
+                <h2 class="mt-1 font-serif text-3xl font-semibold text-ink sm:text-4xl">
+                  Nuansa Nama Lengkap &amp; Nama Panggilan
+                </h2>
+                <div class="mt-5">
+                  ${nameSectionHtml}
+                </div>
+              </div>
+            </section>
+
+            <!-- Bagian 04 -->
+            <section class="editorial-card border border-line bg-white/95 p-6 sm:p-8">
+              <div class="relative z-10">
+                <span class="text-xs font-semibold uppercase tracking-wider text-sky">04 · Fase Lahir &amp; Jejak Waktu</span>
+                <h2 class="mt-1 font-serif text-3xl font-semibold text-ink sm:text-4xl">
+                  Musim Kelahiran, Sisi Penyeimbang &amp; Tempat/Jam Lahir
+                </h2>
+                <div class="mt-5 space-y-4">
+                  ${seasonSectionHtml}
+                  ${placeTimeNotes.join("")}
+                </div>
+              </div>
+            </section>
+
+            <!-- Bagian 05 -->
+            <section class="editorial-card border border-line bg-white/95 p-6 sm:p-8">
+              <div class="relative z-10">
+                <span class="text-xs font-semibold uppercase tracking-wider text-plum">05 · Lapisan di Dalam Diri</span>
+                <h2 class="mt-1 font-serif text-3xl font-semibold text-ink sm:text-4xl">
+                  Sisi-Sisi yang Kadang Tarik-Menarik di Dalammu
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                  Nggak ada yang salah kok kalau di dalam satu kepala dan hati ada beberapa suara yang beda arah. Semua itu bagian dari dirimu sendiri.
+                </p>
+                <div class="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                  <div class="luxury-box border border-line bg-paper p-5">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-muted">Wajah Luar</span>
+                    <p class="mt-1.5 text-sm leading-relaxed text-ink/90 sm:text-base">${personaText}</p>
+                  </div>
+                  <div class="luxury-box border border-line bg-paper p-5">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-muted">Pusat "Aku"</span>
+                    <p class="mt-1.5 text-sm leading-relaxed text-ink/90 sm:text-base">${egoText}</p>
+                  </div>
+                  <div class="luxury-box border border-line bg-paper p-5">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-muted">Sisi yang Sering Disimpan</span>
+                    <p class="mt-1.5 text-sm leading-relaxed text-ink/90 sm:text-base">${shadowText}</p>
+                  </div>
+                  <div class="luxury-box border border-line bg-paper p-5">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-muted">Sisi Peka &amp; Lembut</span>
+                    <p class="mt-1.5 text-sm leading-relaxed text-ink/90 sm:text-base">${innerSoftnessText}</p>
+                  </div>
+                  <div class="luxury-box border border-gold/40 bg-parchment/75 p-5 md:col-span-2 lg:col-span-2">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-gold">Pusat Utuh yang Merangkul</span>
+                    <p class="mt-1.5 text-sm leading-relaxed text-ink/95 sm:text-base">${wholeSelfText}</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Bagian 06 -->
+            <section class="editorial-card border border-line bg-white/95 p-6 sm:p-8">
+              <div class="relative z-10">
+                <span class="text-xs font-semibold uppercase tracking-wider text-moss">06 · Arah &amp; Jeda Pulih</span>
+                <h2 class="mt-1 font-serif text-3xl font-semibold text-ink sm:text-4xl">
+                  Kompas Langkah &amp; Ruang Tenangmu
+                </h2>
+                <div class="mt-5">
+                  ${compassHtml}
+                </div>
+              </div>
+            </section>
+
+            <!-- Bagian 07 -->
+            <section class="editorial-card border border-line bg-white/95 p-6 sm:p-8">
+              <div class="relative z-10">
+                <span class="text-xs font-semibold uppercase tracking-wider text-plum">07 · Ruang Integrasi Diri</span>
+                <h2 class="mt-1 font-serif text-3xl font-semibold text-ink sm:text-4xl">
+                  Menyatukan Sisi yang Saling Tarik-Menarik
+                </h2>
+                <div class="mt-5">
+                  ${integrationHtml}
+                </div>
+              </div>
+            </section>
+
+            <!-- Bagian 08 -->
+            <section class="editorial-card border border-line bg-white/95 p-6 sm:p-8">
+              <div class="relative z-10">
+                <span class="text-xs font-semibold uppercase tracking-wider text-sky">08 · Langkah Praktis Harian</span>
+                <h2 class="mt-1 font-serif text-3xl font-semibold text-ink sm:text-4xl">
+                  Latihan Kecil yang Nyambung Sama Polamu
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                  Nggak perlu diubah semua sekaligus—coba pilih satu latihan ringan di bawah ini buat dipraktikkin pelan-pelan sesuai kondisi harimu.
+                </p>
+                <div class="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
+                  ${practiceStepsHtml}
+                </div>
+              </div>
+            </section>
+          </div>
+        `;
+
+        resultEl.classList.remove("hidden");
+
+        // Pasang fungsi salin ringkasan, cetak catatan, dan salin koordinat
+        const copySummaryBtn = document.getElementById("copySummaryBtn");
+        const printNoteBtn = document.getElementById("printNoteBtn");
+        const feedbackEl = document.getElementById("actionFeedback");
+
+        function copyTextFallback(text) {
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          try {
+            document.execCommand("copy");
+            return true;
+          } catch (err) {
+            return false;
+          } finally {
+            document.body.removeChild(ta);
+          }
+        }
+
+        if (copySummaryBtn) {
+          copySummaryBtn.addEventListener("click", () => {
+            const lines = [
+              `Nama Langit — Catatan Pola Diri (${greetingName})`,
+              `Unsur dominan: ${dominantElem.meta.label} (${dominantElem.pct}%) | Perlu dirawat: ${quietElem.meta.label} (${quietElem.pct}%)`
+            ];
+            if (formattedBirthDate) lines.push(`Tanggal lahir: ${formattedBirthDate}`);
+            if (placeInfo) lines.push(`Daerah lahir: ${placeInfo.city} (${placeInfo.coordText})`);
+            if (data.practiceSteps && data.practiceSteps.length) {
+              lines.push("Langkah praktis:");
+              data.practiceSteps.forEach((s, idx) => {
+                lines.push(`${idx + 1}. ${s.title} — ${s.detail}`);
+              });
+            }
+            const ok = copyTextFallback(lines.join("\n"));
+            if (feedbackEl) {
+              feedbackEl.textContent = ok
+                ? "Ringkasan bacaan berhasil disalin ke papan klip."
+                : "Gagal menyalin otomatis, silakan blok teks secara manual.";
+            }
+          });
+        }
+
+        if (printNoteBtn) {
+          printNoteBtn.addEventListener("click", () => {
+            window.print();
+          });
+        }
+
+        const copyCoordBtns = Array.from(document.querySelectorAll(".copy-coord-btn"));
+        copyCoordBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const coord = btn.getAttribute("data-copy-coord") || "";
+            const ok = copyTextFallback(coord);
+            if (feedbackEl && coord) {
+              feedbackEl.textContent = ok
+                ? `Koordinat ${coord} berhasil disalin.`
+                : `Koordinat: ${coord}`;
+            }
+          });
+        });
+      }
+
+      // Tangani submit formulir dengan validasi menyeluruh
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        showNotice("", "info");
+
+        const rawFullName = document.getElementById("fullName").value;
+        const rawCallName = document.getElementById("callName").value;
+        const dayVal = document.getElementById("birthDay").value;
+        const monthVal = document.getElementById("birthMonth").value;
+        const yearVal = document.getElementById("birthYear").value.trim();
+        const timeVal = document.getElementById("birthTime").value.trim();
+        const placeVal = document.getElementById("birthPlace").value.trim();
+        const capacityVal = document.getElementById("capacity").value;
+
+        const hasAnyInput = Boolean(
+          rawFullName.trim() ||
+          rawCallName.trim() ||
+          dayVal ||
+          monthVal ||
+          yearVal ||
+          timeVal ||
+          placeVal ||
+          capacityVal
+        );
+
+        if (!hasAnyInput) {
+          resultEl.classList.add("hidden");
+          resultEl.innerHTML = "";
+          showNotice("Isi minimal satu kolom dulu ya (misalnya nama panggilan, tanggal/bulan lahir, atau daerah lahirmu).", "error");
+          return;
+        }
+
+        if (yearVal) {
+          const yNum = Number(yearVal);
+          if (!Number.isInteger(yNum) || yNum < 1900 || yNum > 2100) {
+            showNotice("Masukkan tahun lahir yang valid antara 1900 hingga 2100.", "error");
+            return;
+          }
+        }
+
+        if (dayVal && monthVal) {
+          const maxDays = daysInMonth(Number(monthVal), yearVal ? Number(yearVal) : null);
+          if (Number(dayVal) > maxDays) {
+            showNotice(`Bulan yang dipilih hanya memiliki maksimal ${maxDays} hari${yearVal ? ` pada tahun ${yearVal}` : ""}.`, "error");
+            return;
+          }
+        }
+
+        const parsedTime = parseBirthTime24(timeVal);
+        if (parsedTime.provided && !parsedTime.valid) {
+          showNotice(parsedTime.error, "error");
+          return;
+        }
+
+        try {
+          const profileData = buildProfileData({
+            fullName: rawFullName,
+            callName: rawCallName,
+            day: dayVal,
+            month: monthVal,
+            year: yearVal,
+            birthTime: timeVal,
+            birthPlace: placeVal,
+            capacity: capacityVal
+          });
+
+          renderProfile(profileData);
+          resultEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        } catch (err) {
+          showNotice("Terjadi kendala saat menyusun bacaan. Coba periksa kembali isianmu.", "error");
+        }
+      });
+
+      // Bersihkan formulir dan sembunyikan hasil bacaan
+      resetBtn.addEventListener("click", () => {
+        form.reset();
+        selectEls.forEach(syncSelectPlaceholder);
+        syncLivePlaceCoordinate();
+        showNotice("", "info");
+        resultEl.classList.add("hidden");
+        resultEl.innerHTML = "";
+      });
+    })();
+  </script>
+</body>
+</html>
